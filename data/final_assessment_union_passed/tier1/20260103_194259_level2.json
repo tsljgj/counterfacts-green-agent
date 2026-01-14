@@ -1,0 +1,27 @@
+{
+  "source_file": "pipeline_result_20260103_194259.json",
+  "expansion_level": 2,
+  "question": "Determine the founder of the U.S. media corporation corresponding to the acronym CNN by first establishing its complete formal name through standard industry references and confirming the founder's identity via authoritative historical business documentation; using this determined identity, identify the official name of the major philanthropic initiative founded directly by this individual in 1997 with a $1 billion endowment dedicated to advancing international governance frameworks, ensuring uniqueness through the initiative's singular historical scale and exclusive institutional alignment with global intergovernmental priorities.",
+  "expected_answer": "United Nations Foundation",
+  "solver_answer": "United Nations Foundation",
+  "subject": "web_search",
+  "constant_ev": [],
+  "derived_ev": [
+    "The acronym CNN stands for Cable News Network",
+    "The founder of Cable News Network is Ted Turner",
+    "The major philanthropic initiative founded by Ted Turner that created enduring institutional impact involving international governance structures is the United Nations Foundation"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "United Nations Foundation",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "The solver's answer matches the expected answer because Ted Turner announced a $1 billion pledge in September 1997 that created the United Nations Foundation. The formal establishment in 1998 is a minor timeline nuance that doesn't change this identification."
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-07T00:35:59.971360"
+}

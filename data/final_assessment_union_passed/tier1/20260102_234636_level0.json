@@ -1,0 +1,26 @@
+{
+  "source_file": "pipeline_result_20260102_234636.json",
+  "expansion_level": 0,
+  "question": "What is the capital of Australia?",
+  "expected_answer": "Canberra",
+  "solver_answer": "Canberra",
+  "subject": "web_search",
+  "constant_ev": [],
+  "derived_ev": [
+    "Canberra is explicitly identified as the federal capital of the Commonwealth of Australia in Britannica's official entry",
+    "The capital of Australia is Canberra"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "Canberra",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "The solver's answer (Canberra) exactly matches the expected answer and is supported by multiple authoritative sources. The question is unambiguous and the solver provided the correct answer."
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-06T19:22:27.682806"
+}

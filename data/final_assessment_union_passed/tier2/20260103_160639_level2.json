@@ -1,0 +1,54 @@
+{
+  "source_file": "pipeline_result_20260103_160639.json",
+  "expansion_level": 2,
+  "question": "Determine the year when China's national film academy, established under the Ministry of Culture and instrumental in training directors of a transformative cinematic movement, was founded, and identify the first major armed conflict of the Cold War era beginning that year; assuming a 4-year academic program duration for the academy's inaugural class, identify the seminal Chinese film depicting this conflict directed by a graduate of that inaugural class and released within one decade of the conflict's conclusion, then determine the cultural element from this identified film that transcended the film to become a symbol of national identity during China's early socialist period, ensuring this element was performed at the 1959 National Day celebrations commemorating the 10th anniversary of the People's Republic of China.",
+  "expected_answer": "My Motherland",
+  "solver_answer": "China's national film academy (Beijing Film Academy) was founded in 1950; the first major armed conflict of the Cold War era beginning that year was the Korean War; the seminal Chinese film depicting this conflict directed by inaugural class graduate Lin Shan was \"Battle on Shangganling Mountain\" (1956); and the cultural element from this film that transcended the film to become a symbol of national identity during China's early socialist period and was performed at the 1959 National Day celebrations commemorating the 10th anniversary of the People's Republic of China was the theme song \"My Motherland\" (《我的祖国》).",
+  "subject": "web_search",
+  "constant_ev": [
+    "Assume the film academy is established under the Ministry of Culture and instrumental in training directors of a transformative cinematic movement when identifying the academy's founding year",
+    "Assume a 4-year academic program duration when calculating graduation years for Beijing Film Academy's inaugural class"
+  ],
+  "derived_ev": [
+    "The Beijing Film Academy was founded in May/June 1950",
+    "The Korean War began on June 25, 1950 and is recognized as the first major armed conflict of the Cold War era",
+    "The Berlin Blockade (1948-1949) was an earlier Cold War confrontation but not an armed conflict",
+    "The first major armed conflict of the Cold War era that began in the same year as the founding of China's national film academy is the Korean War",
+    "Battle on Shangganling Mountain (1956) is a foundational Chinese film depicting the 1952 Battle of Triangle Hill during the Korean War",
+    "Director Lin Shan graduated from Beijing Film Academy's inaugural class in 1954 and co-directed Battle on Shangganling Mountain",
+    "The seminal film depicting the Korean War directed by early Beijing Film Academy graduates is Battle on Shangganling Mountain",
+    "The theme song 'My Motherland' (《我的祖国》) composed by Liu Chi with lyrics by Qiao Yu became an instant cultural phenomenon upon release, with its opening line 'A great river flows wide' symbolizing patriotic devotion during China's socialist construction era",
+    "The song 'My Motherland' was specifically created for Battle on Shangganling Mountain's river-crossing battle sequence and its cultural significance was cemented when performed at the 1959 National Day celebrations commemorating the 10th anniversary of the People's Republic of China",
+    "The enduring cultural impact of Battle on Shangganling Mountain that transcended the film to become a symbol of national identity during China's early socialist period is embodied by its theme song My Motherland"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER2",
+    "tier1_result": {
+      "solver_answer": "NO_ANSWER",
+      "answer_agrees": false,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "No reasoning extracted"
+    },
+    "tier2_result": {
+      "validated_devs": [
+        "The Beijing Film Academy was founded in May/June 1950",
+        "The Korean War began on June 25, 1950 and is recognized as the first major armed conflict of the Cold War era",
+        "The Berlin Blockade (1948-1949) was an earlier Cold War confrontation but not an armed conflict",
+        "The first major armed conflict of the Cold War era that began in the same year as the founding of China's national film academy is the Korean War",
+        "Battle on Shangganling Mountain (1956) is a foundational Chinese film depicting the 1952 Battle of Triangle Hill during the Korean War",
+        "Director Lin Shan graduated from Beijing Film Academy's inaugural class in 1954 and co-directed Battle on Shangganling Mountain",
+        "The seminal film depicting the Korean War directed by early Beijing Film Academy graduates is Battle on Shangganling Mountain",
+        "The theme song 'My Motherland' (《我的祖国》) composed by Liu Chi with lyrics by Qiao Yu became an instant cultural phenomenon upon release, with its opening line 'A great river flows wide' symbolizing patriotic devotion during China's socialist construction era",
+        "The song 'My Motherland' was specifically created for Battle on Shangganling Mountain's river-crossing battle sequence and its cultural significance was cemented when performed at the 1959 National Day celebrations commemorating the 10th anniversary of the People's Republic of China",
+        "The enduring cultural impact of Battle on Shangganling Mountain that transcended the film to become a symbol of national identity during China's early socialist period is embodied by its theme song My Motherland"
+      ],
+      "rejected_devs": [],
+      "solver_answer": "China's national film academy (Beijing Film Academy) was founded in 1950; the first major armed conflict of the Cold War era beginning that year was the Korean War; the seminal Chinese film depicting this conflict directed by inaugural class graduate Lin Shan was \"Battle on Shangganling Mountain\" (1956); and the cultural element from this film that transcended the film to become a symbol of national identity during China's early socialist period and was performed at the 1959 National Day celebrations commemorating the 10th anniversary of the People's Republic of China was the theme song \"My Motherland\" (《我的祖国》).",
+      "answer_agrees": true,
+      "reasoning": "Both answers identify \"My Motherland\" as the cultural element, and the solver's additional contextual details are verifiably correct, so despite being more comprehensive the answers fundamentally agree."
+    },
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-08T20:27:43.094055"
+}

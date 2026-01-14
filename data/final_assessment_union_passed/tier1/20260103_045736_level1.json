@@ -1,0 +1,31 @@
+{
+  "source_file": "pipeline_result_20260103_045736.json",
+  "expansion_level": 1,
+  "question": "Determine the two individuals recognized for inventing the first successful powered airplane technology, then identify the major international historical event occurring in the birth year of the elder among them, where this event constitutes a foundational political unification establishing a sovereign nation-state distinct from territorial transfers or colonial administrative changes.",
+  "expected_answer": "Dominion of Canada",
+  "solver_answer": "Canadian Confederation",
+  "subject": "web_search",
+  "constant_ev": [],
+  "derived_ev": [
+    "The Smithsonian Institution Archives identifies Wilbur Wright (April 16, 1867–May 30, 1912) and Orville Wright (August 19, 1871–January 30, 1948) as the inventors of the first successful airplane",
+    "The Library of Congress Wright Brothers collection confirms Orville and Wilbur Wright as the aviation pioneers who developed aviation technology",
+    "The National Park Service explicitly names Orville and Wilbur Wright as the sons of Milton and Susan Wright",
+    "Wikipedia's entry consolidates that the Wright brothers, Orville Wright (August 19, 1871 – January 30, 1948) and Wilbur Wright (April 16, 1867 – May 30, 1912), were American aviation pioneers who achieved the first powered flight",
+    "The Wright Brothers were Orville and Wilbur Wright, American aviation pioneers who invented the first successful powered airplane",
+    "1867 marks the year of Canadian Confederation when the British North America Act united the colonies of Canada, New Brunswick, and Nova Scotia into the Dominion of Canada on July 1, 1867",
+    "The major international historical event that occurred in 1867 was the creation of the Dominion of Canada through Canadian Confederation"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "Canadian Confederation",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "Both answers refer to the same 1867 event: \"Dominion of Canada\" names the resulting political entity while \"Canadian Confederation\" denotes the process/event that created it. Therefore they are equivalent in this context and both correctly identify the nation-founding event in Wilbur Wright's birth year."
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-06T21:39:13.043417"
+}

@@ -1,0 +1,30 @@
+{
+  "source_file": "pipeline_result_20260103_180205.json",
+  "expansion_level": 0,
+  "question": "Who is the author of The Universe Around Us?",
+  "expected_answer": "James Hopwood Jeans",
+  "solver_answer": "Sir James Jeans",
+  "subject": "web_search",
+  "constant_ev": [],
+  "derived_ev": [
+    "Multiple authoritative sources including Wikipedia, Amazon, Project Gutenberg, and Goodreads identify the author of \"The Universe Around Us\" as Sir James Jeans",
+    "The Online Books Page lists the full name \"James Hopwood Jeans, Sir, 1877-1946\" as the author of \"The Universe Around Us\"",
+    "World Scientific Publishing confirms \"The Universe Around Us\" was published in 1929 and authored by Sir James Jeans",
+    "The Internet Archive listing provides James Hopwood Jeans' full name with lifespan dates (1877-1946), confirming his identity as the author of \"The Universe Around Us\"",
+    "All verified search results uniformly attribute \"The Universe Around Us\" to James Hopwood Jeans with no conflicting authorship information",
+    "The author of \"The Universe Around Us\" is James Hopwood Jeans"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "Sir James Jeans",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "The solver’s answer \"Sir James Jeans\" is equivalent to the expected answer \"James Hopwood Jeans\" since both refer to Sir James Hopwood Jeans (1877–1946), the English astrophysicist who wrote \"The Universe Around Us\" in 1929. Using the honorific \"Sir\" instead of the middle name does not change the author's identity, as confirmed by multiple sources."
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-07T00:07:05.237903"
+}

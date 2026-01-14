@@ -1,0 +1,34 @@
+{
+  "source_file": "pipeline_result_20260103_043740.json",
+  "expansion_level": 2,
+  "question": "Determine the location of the Eiffel Tower and the seminal late 18th-century historical event at that location causally linked to the tower's construction purpose per primary historical documentation; then identify the individual commissioned within 24 hours of that event to systematically demolish the associated fortress and distribute commemorative models crafted from its stones to all 83 departments of France, with uniqueness verified through contemporaneous administrative records.",
+  "expected_answer": "Pierre-François Palloy",
+  "solver_answer": "Pierre-François Palloy",
+  "subject": "web_search",
+  "constant_ev": [],
+  "derived_ev": [
+    "The Eiffel Tower is located in Paris",
+    "The Eiffel Tower was built for the 1889 Exposition Universelle, which marked the 100th anniversary of the French Revolution",
+    "The Storming of the Bastille on July 14, 1789 is the seminal event that initiated the French Revolution",
+    "The major historical event commemorated by the construction of the Eiffel Tower for the 1889 Exposition Universelle is the Storming of the Bastille",
+    "Pierre-François Palloy was commissioned by the Paris Commune on July 15, 1789 to demolish the Bastille",
+    "Palloy was granted the demolition contract within 24 hours of the Storming of the Bastille",
+    "Palloy personally designed commemorative models from the Bastille fortress stones",
+    "Palloy distributed miniature Bastille models carved from its stones to all 83 departments of France",
+    "The miniature Bastille models became physical embodiments of the revolution's victory over tyranny",
+    "The key individual responsible for the systematic demolition of the Bastille fortress immediately following the Storming of the Bastille and its transformation into revolutionary symbols was Pierre-François Palloy"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "Pierre-François Palloy",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "The solver's answer exactly matches the expected answer and is supported by historical documentation: Palloy was commissioned on July 15, 1789 to demolish the Bastille and produced 83 scale models from its stones that he distributed to France's 83 departments. The factual claims, including the Eiffel Tower's 1889 centennial purpose, are also historically accurate."
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-06T21:32:34.533791"
+}

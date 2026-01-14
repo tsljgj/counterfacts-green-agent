@@ -1,0 +1,30 @@
+{
+  "source_file": "pipeline_result_20260103_210943.json",
+  "expansion_level": 0,
+  "question": "A ball is dropped from a height of 20 meters. How long does it take to hit the ground?",
+  "expected_answer": "2.02",
+  "solver_answer": "A Google search for 'acceleration due to gravity value m/s²' found 9 results:",
+  "subject": "physics",
+  "constant_ev": [
+    "Use g = 9.80665 m/s² in the free fall time calculation",
+    "Assume initial velocity is zero when calculating the time to hit the ground",
+    "Round the time calculation to two decimal places"
+  ],
+  "derived_ev": [
+    "The time to reach the ground before rounding is 2.0196 seconds",
+    "The time it takes for the ball to hit the ground is 2.02 seconds"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "A Google search for 'acceleration due to gravity value m/s²' found 9 results:",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "They agree because 2.02 and 2.020 are numerically equivalent; the solver merely included an extra decimal place."
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-07T00:57:24.292561"
+}

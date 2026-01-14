@@ -1,0 +1,41 @@
+{
+  "source_file": "pipeline_result_20260103_152446.json",
+  "expansion_level": 1,
+  "question": "Determine the film title most internationally recognized as the seminal work of the cinematic cohort graduating from the institution where the director of *The Sino-Dutch War 1661* studied, where this cohort is documented in authoritative film scholarship as having pioneered a transformative national cinematic movement following a decades-long period of state-mandated artistic suppression, providing only the film title.",
+  "expected_answer": "Farewell My Concubine",
+  "solver_answer": "Farewell My Concubine",
+  "subject": "web_search",
+  "constant_ev": [],
+  "derived_ev": [
+    "The director of 'The Sino-Dutch War 1661' (also known as 'Hero Zheng Chenggong') is Wu Ziniu, confirmed by authoritative sources including Wikipedia, IMDb, and Letterboxd",
+    "Wu Ziniu is documented as a member of the 1982 graduating class of the Beijing Film Academy according to Wikipedia and CILECT's official documentation",
+    "The director of The Sino-Dutch War 1661, Wu Ziniu, studied at Beijing Film Academy as verified by institutional records and film industry publications",
+    "Wu Ziniu's 1982 graduating class at Beijing Film Academy constitutes China's \"Fifth Generation\" of filmmakers, identified as pioneers who revitalized Chinese cinema after the Cultural Revolution with cohort members including Zhang Yimou and Chen Kaige per Film Reference and Duke University Press documentation",
+    "The most internationally recognized achievement of China's Fifth Generation filmmakers movement is Chen Kaige's *Farewell My Concubine* (1993), a Palme d'Or-winning film that epitomizes the movement's signature blend of historical epic storytelling and visual poetry as confirmed by Art Gallery of NSW and GBH special reports"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER2",
+    "tier1_result": {
+      "solver_answer": "NO_ANSWER",
+      "answer_agrees": false,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "They disagree because the solver provided no answer rather than attempting the multi-step question. The expected answer \"Farewell My Concubine\" is well-supported by evidence about the Fifth Generation filmmakers and its Palme d'Or win, so the solver's non-response does not indicate ambiguity or error."
+    },
+    "tier2_result": {
+      "validated_devs": [
+        "The director of 'The Sino-Dutch War 1661' (also known as 'Hero Zheng Chenggong') is Wu Ziniu, confirmed by authoritative sources including Wikipedia, IMDb, and Letterboxd",
+        "Wu Ziniu is documented as a member of the 1982 graduating class of the Beijing Film Academy according to Wikipedia and CILECT's official documentation",
+        "The director of The Sino-Dutch War 1661, Wu Ziniu, studied at Beijing Film Academy as verified by institutional records and film industry publications",
+        "Wu Ziniu's 1982 graduating class at Beijing Film Academy constitutes China's \"Fifth Generation\" of filmmakers, identified as pioneers who revitalized Chinese cinema after the Cultural Revolution with cohort members including Zhang Yimou and Chen Kaige per Film Reference and Duke University Press documentation",
+        "The most internationally recognized achievement of China's Fifth Generation filmmakers movement is Chen Kaige's *Farewell My Concubine* (1993), a Palme d'Or-winning film that epitomizes the movement's signature blend of historical epic storytelling and visual poetry as confirmed by Art Gallery of NSW and GBH special reports"
+      ],
+      "rejected_devs": [],
+      "solver_answer": "Farewell My Concubine",
+      "answer_agrees": true,
+      "reasoning": "The solver's answer \"Farewell My Concubine\" matches the expected answer because it is widely recognized as the most internationally acclaimed Fifth Generation Chinese film (winning the Palme d'Or) and the solver's note about Wu Ziniu belonging to the 1982 Beijing Film Academy class correctly identifies the Fifth Generation context."
+    },
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-08T19:49:17.407227"
+}

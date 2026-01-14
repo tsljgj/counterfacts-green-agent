@@ -1,0 +1,29 @@
+{
+  "source_file": "pipeline_result_20260103_010930.json",
+  "expansion_level": 1,
+  "question": "Determine the organization founded in the same year as the recording venue central to the production of the album Abbey Road, ensuring it established this venue within twelve months of incorporation and maintains unbroken historical linkage to the album's performing act, with the constraint that no other entity meeting these criteria shares the venue's operational commencement year.",
+  "expected_answer": "EMI",
+  "solver_answer": "Electric and Musical Industries Ltd (EMI)",
+  "subject": "web_search",
+  "constant_ev": [],
+  "derived_ev": [
+    "The band that released the album Abbey Road is The Beatles",
+    "Abbey Road Studios was established in November 1931 as part of the Electrical and Musical Industries (EMI) complex",
+    "EMI (Electrical and Musical Industries Ltd.) was formed in March 1931 through the merger of Columbia Graphophone Company and The Gramophone Company",
+    "EMI established Abbey Road Studios later in 1931 and was the parent company of both the studio and its flagship artists including The Beatles",
+    "The historically significant entity founded in 1931 that is connected to The Beatles through Abbey Road Studios is EMI"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "Electric and Musical Industries Ltd (EMI)",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "They agree because \"Electric and Musical Industries Ltd (EMI)\" is the same organization as \"EMI,\" and the solver's factual claims (EMI formed March 1931; Abbey Road opened November 12, 1931, within eight months) are verified by reliable sources."
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-06T19:48:42.487605"
+}

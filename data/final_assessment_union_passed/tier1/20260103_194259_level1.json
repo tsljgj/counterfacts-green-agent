@@ -1,0 +1,26 @@
+{
+  "source_file": "pipeline_result_20260103_194259.json",
+  "expansion_level": 1,
+  "question": "Determine the founder of the U.S. media corporation corresponding to the acronym CNN by first establishing its complete formal name through standard industry references, then confirming the founder's identity using authoritative historical business documentation.",
+  "expected_answer": "Ted Turner",
+  "solver_answer": "Ted Turner",
+  "subject": "web_search",
+  "constant_ev": [],
+  "derived_ev": [
+    "The acronym CNN stands for Cable News Network",
+    "The founder of Cable News Network is Ted Turner"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "Ted Turner",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "The solver's answer \"Ted Turner\" directly matches the expected answer. Multiple authoritative sources (CNN, Encyclopedia Britannica, History.com, etc.) corroborate that Ted Turner founded CNN on June 1, 1980, making the question unambiguous."
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-07T00:33:21.172433"
+}

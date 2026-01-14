@@ -1,0 +1,31 @@
+{
+  "source_file": "pipeline_result_20260103_033142.json",
+  "expansion_level": 2,
+  "question": "Determine the historically significant landmark representing the cultural identity of the entity identified as the primary opposing force in the most significant military conflict initiated under the leadership corresponding to the result of determining the first female Prime Minister of the United Kingdom, considering only monuments constructed during the 1900s to commemorate a city's foundational anniversary and prominently featured in national independence day commemorations.",
+  "expected_answer": "Obelisk of Buenos Aires",
+  "solver_answer": "Obelisco de Buenos Aires",
+  "subject": "web_search",
+  "constant_ev": [],
+  "derived_ev": [
+    "The first female Prime Minister of the United Kingdom was Margaret Thatcher",
+    "The 1982 Falklands War was triggered by Argentina's invasion of the British Overseas Territory of the Falkland Islands",
+    "Argentina was the sole nation engaged in direct military confrontation with the United Kingdom during the 1982 Falklands War",
+    "The primary opposing nation in the most significant military conflict initiated under Margaret Thatcher's leadership was Argentina",
+    "Buenos Aires is the constitutional capital of Argentina, designated as an autonomous city since 1994",
+    "The Obelisk of Buenos Aires (Obelisco de Buenos Aires) was constructed in 1936 to commemorate the 400th anniversary of the city's first founding and stands as a central symbol during national celebrations like Argentine Independence Day",
+    "The historically significant landmark representing Argentina's cultural identity is the Obelisk of Buenos Aires"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "Obelisco de Buenos Aires",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "The solver's answer \"Obelisco de Buenos Aires\" and the expected \"Obelisk of Buenos Aires\" are equivalent names for the same monument (\"Obelisco\" is Spanish for \"Obelisk\"). The monument meets all question criteria—it was built in 1936 to commemorate Buenos Aires' 400th anniversary and is a national historic monument and cultural icon of Argentina."
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-06T20:58:14.674679"
+}

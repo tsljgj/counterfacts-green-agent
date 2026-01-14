@@ -1,0 +1,29 @@
+{
+  "source_file": "pipeline_result_20260103_021316.json",
+  "expansion_level": 0,
+  "question": "Who discovered penicillin?",
+  "expected_answer": "Alexander Fleming",
+  "solver_answer": "Alexander Fleming discovered penicillin in 1928.",
+  "subject": "web_search",
+  "constant_ev": [],
+  "derived_ev": [
+    "Multiple authoritative sources including Wikipedia, NIH, American Chemical Society, PBS, and NobelPrize.org consistently identify Alexander Fleming as the discoverer of penicillin.",
+    "The NIH article states that Alexander Fleming was a Scottish physician-scientist recognized for discovering penicillin.",
+    "The American Chemical Society confirms that Alexander Fleming discovered penicillin in 1928 at St. Mary's Hospital, London.",
+    "The Nobel Prize website documents Alexander Fleming's 1928 discovery of penicillin, for which he was awarded the Nobel Prize in Medicine in 1945.",
+    "The discoverer of penicillin is Alexander Fleming."
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "Alexander Fleming discovered penicillin in 1928.",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "The solver correctly identified Alexander Fleming as the discoverer of penicillin and provided accurate additional context about the year of discovery (1928) and the circumstances (accidental discovery at St. Mary's Hospital). The solver's answer is a more complete version of the expected answer, not a different or contradictory one."
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-06T20:14:09.274933"
+}

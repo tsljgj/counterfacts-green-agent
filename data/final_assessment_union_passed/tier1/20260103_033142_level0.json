@@ -1,0 +1,25 @@
+{
+  "source_file": "pipeline_result_20260103_033142.json",
+  "expansion_level": 0,
+  "question": "Who was the first female Prime Minister of the United Kingdom?",
+  "expected_answer": "Margaret Thatcher",
+  "solver_answer": "Margaret Thatcher",
+  "subject": "web_search",
+  "constant_ev": [],
+  "derived_ev": [
+    "The first female Prime Minister of the United Kingdom was Margaret Thatcher"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "Margaret Thatcher",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "Both the expected answer and solver's answer are identical (\"Margaret Thatcher\") and this fact is well-documented and universally agreed upon by multiple authoritative historical sources. The solver's answer is completely correct."
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-06T20:54:32.570217"
+}

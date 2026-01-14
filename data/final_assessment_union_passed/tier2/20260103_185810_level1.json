@@ -1,0 +1,45 @@
+{
+  "source_file": "pipeline_result_20260103_185810.json",
+  "expansion_level": 1,
+  "question": "Determine the country containing the village Chal Siah Manchatun Jowkar, then identify the emperor who commissioned scholarly works preserving classical knowledge about Persepolis' destruction, given that Photius created the authoritative excerpt of Arrian's *Anabasis* and Persepolis is located within the referenced country; the solution must uniquely specify this emperor using only the historical connection between the country's territory and the commissioned works.",
+  "expected_answer": "Michael III",
+  "solver_answer": "Michael III",
+  "subject": "web_search",
+  "constant_ev": [],
+  "derived_ev": [
+    "Chal Siah Manchatun Jowkar is a village in Margown Rural District, Margown District, Boyer-Ahmad County, Kohgiluyeh and Boyer-Ahmad Province, Iran as documented by Wikipedia",
+    "Kohgiluyeh and Boyer-Ahmad Province forms part of Iran's territorial administrative division confirmed through Province → County → District → Rural District hierarchy verification using authoritative sources",
+    "Chal Siah Manchatun Jowkar is located in Iran",
+    "Photius (c. 815-897), the Patriarch of Constantinople and leading Byzantine scholar, created the most authoritative surviving excerpt of Arrian's \"Anabasis\" as documented by Livius.org and Brill publications",
+    "Photius served during the reign of Emperor Michael III (842-867 CE) who actively commissioned scholarly works to preserve classical knowledge within the Byzantine Empire",
+    "The chain of historical documentation about Persepolis' destruction connects Emperor Michael III's scholarly commissions to Iran",
+    "The emperor who commissioned scholarly works preserving classical knowledge about Persepolis' destruction and forms the new ground truth connection to Iran was Michael III"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER2",
+    "tier1_result": {
+      "solver_answer": "Constantine VII Porphyrogenitus",
+      "answer_agrees": false,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "No reasoning is provided; the text only states an intent to verify facts and research key elements."
+    },
+    "tier2_result": {
+      "validated_devs": [
+        "Chal Siah Manchatun Jowkar is a village in Margown Rural District, Margown District, Boyer-Ahmad County, Kohgiluyeh and Boyer-Ahmad Province, Iran as documented by Wikipedia",
+        "Kohgiluyeh and Boyer-Ahmad Province forms part of Iran's territorial administrative division confirmed through Province → County → District → Rural District hierarchy verification using authoritative sources",
+        "Chal Siah Manchatun Jowkar is located in Iran",
+        "Photius (c. 815-897), the Patriarch of Constantinople and leading Byzantine scholar, created the most authoritative surviving excerpt of Arrian's \"Anabasis\" as documented by Livius.org and Brill publications",
+        "Photius served during the reign of Emperor Michael III (842-867 CE) who actively commissioned scholarly works to preserve classical knowledge within the Byzantine Empire",
+        "The chain of historical documentation about Persepolis' destruction connects Emperor Michael III's scholarly commissions to Iran",
+        "The emperor who commissioned scholarly works preserving classical knowledge about Persepolis' destruction and forms the new ground truth connection to Iran was Michael III"
+      ],
+      "rejected_devs": [],
+      "solver_answer": "Michael III",
+      "answer_agrees": true,
+      "reasoning": "They agree because the solver's answer \"Michael III\" matches the expected answer, and web-verified facts form a valid chain: the village and Persepolis are in Iran, Arrian's Anabasis describes Persepolis' destruction, Photius preserved Arrian's work in his Bibliotheca, and Photius served under Emperor Michael III."
+    },
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-07T00:16:08.350078"
+}

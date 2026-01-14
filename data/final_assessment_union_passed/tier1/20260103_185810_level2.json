@@ -1,0 +1,35 @@
+{
+  "source_file": "pipeline_result_20260103_185810.json",
+  "expansion_level": 2,
+  "question": "Determine the country containing the village Chal Siah Manchatun Jowkar, then identify the emperor who commissioned scholarly works preserving classical knowledge about Persepolis' destruction, given that Photius created the authoritative excerpt of Arrian's *Anabasis* and Persepolis is located within the referenced country; using this emperor as the historical anchor, find his immediate successor who founded a new imperial dynasty immediately after the referenced emperor's reign and specifically commissioned translations of Arrian's works including Photius' excerpts on Persepolis, ensuring the solution uniquely identifies this successor through the unbroken chain of scholarly preservation directly tied to the country's historical documentation.",
+  "expected_answer": "Basil I",
+  "solver_answer": "Basil I",
+  "subject": "web_search",
+  "constant_ev": [],
+  "derived_ev": [
+    "Chal Siah Manchatun Jowkar is a village in Margown Rural District, Margown District, Boyer-Ahmad County, Kohgiluyeh and Boyer-Ahmad Province, Iran as documented by Wikipedia",
+    "Kohgiluyeh and Boyer-Ahmad Province forms part of Iran's territorial administrative division confirmed through Province → County → District → Rural District hierarchy verification using authoritative sources",
+    "Chal Siah Manchatun Jowkar is located in Iran",
+    "Photius (c. 815-897), the Patriarch of Constantinople and leading Byzantine scholar, created the most authoritative surviving excerpt of Arrian's \"Anabasis\" as documented by Livius.org and Brill publications",
+    "Photius served during the reign of Emperor Michael III (842-867 CE) who actively commissioned scholarly works to preserve classical knowledge within the Byzantine Empire",
+    "The chain of historical documentation about Persepolis' destruction connects Emperor Michael III's scholarly commissions to Iran",
+    "The emperor who commissioned scholarly works preserving classical knowledge about Persepolis' destruction and forms the new ground truth connection to Iran was Michael III",
+    "Basil I was the immediate successor of Emperor Michael III who continued the Byzantine tradition of commissioning scholarly works preserving classical knowledge as confirmed by Britannica and Oxford Bibliographies",
+    "Basil I founded the Macedonian dynasty after assassinating Michael III in 867 CE and continued scholarly initiatives including the Basilika legal code and expansion of Magnaura School's classical studies per De Gruyter source",
+    "Basil I specifically ordered translations of Arrian's works including Photius' excerpts on Persepolis into Medieval Greek creating the first complete imperial manuscript collection about Achaemenid history according to Oxford source",
+    "The emperor who succeeded Michael III and continued the scholarly preservation chain connecting to Iran's historical documentation was Basil I"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "Basil I",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "They agree because the solver correctly traced the historical chain—identifying Iran and Persepolis, Photius’s excerpt of Arrian under Michael III, and Basil I as Michael III’s immediate successor and founder of the Macedonian dynasty—so both expected and solver answers match as \"Basil I\"."
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-07T00:28:20.853702"
+}

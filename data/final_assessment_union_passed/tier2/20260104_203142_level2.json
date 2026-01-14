@@ -1,0 +1,56 @@
+{
+  "source_file": "pipeline_result_20260104_203142.json",
+  "expansion_level": 2,
+  "question": "For a frictionless pipe bend carrying water at 0.3 m³/s with 150 mm inlet diameter, 300 mm outlet diameter, 100 kN/m² inlet pressure, 0.075 m³ volume, 45° bend angle, 1 m vertical rise, and equal horizontal displacement, compute the minimum design overturning moment capacity that structural supports must provide per ASME B31.3 Section 302.2.2, given that this capacity equals 1.5 times the overturning moment about the inlet derived from the fluid dynamics and geometric conditions, ensuring the solution adheres strictly to the specified safety factor requirement for water systems.",
+  "expected_answer": "5.64 kN·m",
+  "solver_answer": "5.64 kN·m",
+  "subject": "physics",
+  "constant_ev": [
+    "Neglect friction when calculating the force and direction",
+    "Assume a 1 m vertical rise for the pipe bend geometry when calculating the center of mass location",
+    "Assume a 45° bend angle implying equal horizontal displacement for the pipe bend geometry when determining the center of mass coordinates",
+    "Apply a safety factor of 1.5 per ASME B31.3 Section 302.2.2 when scaling the theoretical overturning moment for structural support design"
+  ],
+  "derived_ev": [
+    "The density of water is 1000 kg/m³",
+    "The resultant force on the pipe bend is 13.7 kN at an angle of 67.91 degrees from the horizontal",
+    "The final answer is: 13.7 kN at 67.91 degrees",
+    "For a pipe bend with linear diameter variation and symmetric geometry, the center of mass aligns with the geometric centroid",
+    "The center of mass of the water within the bend is located at (0.5 m, 0.5 m) relative to the inlet",
+    "The horizontal component of the resultant force is Fx = 5.1652 kN",
+    "The vertical component of the resultant force is Fy = 12.6863 kN",
+    "The overturning moment about the inlet that pipe supports must resist to prevent rotational failure is 3.76 kN·m",
+    "The design overturning moment scaled by the safety factor is 5.64 kN·m",
+    "The minimum overturning moment capacity that structural supports must provide to comply with ASME B31.3 standards is 5.64 kN·m"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER2",
+    "tier1_result": {
+      "solver_answer": "13.04 kN·m",
+      "answer_agrees": false,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "No reasoning or explanation for the verification decision is provided in the text."
+    },
+    "tier2_result": {
+      "validated_devs": [
+        "The density of water is 1000 kg/m³",
+        "The resultant force on the pipe bend is 13.7 kN at an angle of 67.91 degrees from the horizontal",
+        "The final answer is: 13.7 kN at 67.91 degrees",
+        "For a pipe bend with linear diameter variation and symmetric geometry, the center of mass aligns with the geometric centroid",
+        "The center of mass of the water within the bend is located at (0.5 m, 0.5 m) relative to the inlet",
+        "The horizontal component of the resultant force is Fx = 5.1652 kN",
+        "The vertical component of the resultant force is Fy = 12.6863 kN",
+        "The overturning moment about the inlet that pipe supports must resist to prevent rotational failure is 3.76 kN·m",
+        "The design overturning moment scaled by the safety factor is 5.64 kN·m",
+        "The minimum overturning moment capacity that structural supports must provide to comply with ASME B31.3 standards is 5.64 kN·m"
+      ],
+      "rejected_devs": [],
+      "solver_answer": "5.64 kN·m",
+      "answer_agrees": true,
+      "reasoning": "The solver's answer matches the expected answer exactly (5.64 kN·m) and the arithmetic is correct: 3.76 kN·m × 1.5 = 5.64 kN·m. The specified safety factor of 1.5 was correctly applied per ASME B31.3 Section 302.2.2, demonstrating proper understanding of the problem."
+    },
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-07T02:11:53.768929"
+}

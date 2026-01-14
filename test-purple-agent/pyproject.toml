@@ -1,0 +1,10 @@
+[project]
+name = "simple-qa-agent"
+version = "0.1.0"
+description = "A simple purple agent for testing green agents"
+requires-python = ">=3.13"
+dependencies = [
+    "a2a-sdk[http-server]>=0.3.20",
+    "uvicorn>=0.38.0",
+    "openai>=1.0.0",
+]

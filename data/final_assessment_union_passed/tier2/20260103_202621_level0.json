@@ -1,0 +1,33 @@
+{
+  "source_file": "pipeline_result_20260103_202621.json",
+  "expansion_level": 0,
+  "question": "When was the International Hydrographic Organization founded?",
+  "expected_answer": "June 21, 1921",
+  "solver_answer": "The International Hydrographic Organization (IHO) traces its origins to June 21, 1921, when it was founded as the International Hydrographic Bureau. The name was officially changed to International Hydrographic Organization in 1970 when a new convention entered into force.",
+  "subject": "web_search",
+  "constant_ev": [],
+  "derived_ev": [
+    "The International Hydrographic Bureau was formally founded on June 21, 1921, as stated in the IHO's official publication 'The History of the IHO' (M-10_2019_EN.pdf)"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER2",
+    "tier1_result": {
+      "solver_answer": "June 1921",
+      "answer_agrees": false,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "The expected answer specifies the exact founding date (June 21, 1921). The solver's \"June 1921\" is factually correct but incomplete, so the answers disagree because the specific day was omitted."
+    },
+    "tier2_result": {
+      "validated_devs": [
+        "The International Hydrographic Bureau was formally founded on June 21, 1921, as stated in the IHO's official publication 'The History of the IHO' (M-10_2019_EN.pdf)"
+      ],
+      "rejected_devs": [],
+      "solver_answer": "The International Hydrographic Organization (IHO) traces its origins to June 21, 1921, when it was founded as the International Hydrographic Bureau. The name was officially changed to International Hydrographic Organization in 1970 when a new convention entered into force.",
+      "answer_agrees": true,
+      "reasoning": "The solver's answer matches the expected answer by confirming the IHO was founded on June 21, 1921 as the International Hydrographic Bureau, and multiple authoritative sources corroborate this. The question is ambiguous because it could also refer to the 1970 renaming to International Hydrographic Organization, and the solver provided the fuller historical context."
+    },
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-07T00:39:15.437549"
+}

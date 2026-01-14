@@ -1,0 +1,57 @@
+{
+  "source_file": "pipeline_result_20260103_025021.json",
+  "expansion_level": 2,
+  "question": "Determine the institution permanently archiving the original engineering documentation utilized for constructing operational mechanical reproductions exhibited at the venue established within the municipality corresponding to the place-based modifier intrinsic to the entity associated with the Mona Lisa's creation, ensuring this archival repository's designation remains uniquely identifiable when cross-referencing holdings against standards for reproductions derived exclusively from preserved technical manuscripts among all cultural institutions honoring the entity's regional contributions.",
+  "expected_answer": "Veneranda Biblioteca Ambrosiana",
+  "solver_answer": "Veneranda Biblioteca Ambrosiana",
+  "subject": "web_search",
+  "constant_ev": [],
+  "derived_ev": [
+    "According to Wikipedia, the Mona Lisa is a half-length portrait painting by the Italian artist Leonardo da Vinci",
+    "Britannica states that Leonardo da Vinci began painting the Mona Lisa about 1503, and it was in his studio when he died in 1519",
+    "Smarthistory explicitly identifies the work as Leonardo da Vinci, Portrait of Lisa Gherardini (known as the Mona Lisa), c. 1503–19",
+    "The Louvre Museum's description via PARISCityVISION states the Mona Lisa was painted by Leonardo da Vinci in the 16th century and is displayed at the museum",
+    "The painter of the Mona Lisa is Leonardo da Vinci",
+    "Leonardo da Vinci was born on April 15, 1452 in Anchiano, a hamlet near Vinci, Italy, as confirmed by Britannica and Visit Tuscany",
+    "The Museo Leonardiano di Vinci was established in 1953 on Leonardo's birthday in Vinci to preserve and exhibit models based on his engineering drawings and manuscripts, according to official tourism sources and museum documentation",
+    "The primary museum established in Vinci to honor Leonardo da Vinci is the Museo Leonardiano di Vinci",
+    "The Codex Atlanticus, Leonardo da Vinci's most comprehensive collection of engineering drawings and technical studies, is permanently housed at Milan's Veneranda Biblioteca Ambrosiana as confirmed by the Biblioteca Ambrosiana's official website and Britannica",
+    "The Veneranda Biblioteca Ambrosiana serves as the primary custodian of Leonardo da Vinci's original engineering documentation used globally for operational reproductions according to museum documentation",
+    "The Codex Atlanticus exclusively contains Leonardo da Vinci's systematic engineering designs including flying machines and hydraulic systems spanning 1119 pages as confirmed by Biblioteca Ambrosiana's digital archive",
+    "The British Library's Codex Arundel focuses on theoretical notes and does not contain the engineering-focused documentation used for mechanical reproductions like those at the Museo Leonardiano di Vinci",
+    "The institution that permanently archives Leonardo da Vinci's original engineering manuscripts specifically used to create the Museo Leonardiano di Vinci's operational reproductions is the Veneranda Biblioteca Ambrosiana"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER2",
+    "tier1_result": {
+      "solver_answer": "NO_ANSWER",
+      "answer_agrees": false,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "They disagree because the solver correctly identified Leonardo da Vinci and Vinci, Italy but failed to provide the required answer. Verification shows the Ambrosiana in Milan holds Leonardo’s Codex Atlanticus, confirming the expected answer that its originals underpin the mechanical reproductions."
+    },
+    "tier2_result": {
+      "validated_devs": [
+        "According to Wikipedia, the Mona Lisa is a half-length portrait painting by the Italian artist Leonardo da Vinci",
+        "Britannica states that Leonardo da Vinci began painting the Mona Lisa about 1503, and it was in his studio when he died in 1519",
+        "Smarthistory explicitly identifies the work as Leonardo da Vinci, Portrait of Lisa Gherardini (known as the Mona Lisa), c. 1503–19",
+        "The Louvre Museum's description via PARISCityVISION states the Mona Lisa was painted by Leonardo da Vinci in the 16th century and is displayed at the museum",
+        "The painter of the Mona Lisa is Leonardo da Vinci",
+        "Leonardo da Vinci was born on April 15, 1452 in Anchiano, a hamlet near Vinci, Italy, as confirmed by Britannica and Visit Tuscany",
+        "The Museo Leonardiano di Vinci was established in 1953 on Leonardo's birthday in Vinci to preserve and exhibit models based on his engineering drawings and manuscripts, according to official tourism sources and museum documentation",
+        "The primary museum established in Vinci to honor Leonardo da Vinci is the Museo Leonardiano di Vinci",
+        "The Codex Atlanticus, Leonardo da Vinci's most comprehensive collection of engineering drawings and technical studies, is permanently housed at Milan's Veneranda Biblioteca Ambrosiana as confirmed by the Biblioteca Ambrosiana's official website and Britannica",
+        "The Veneranda Biblioteca Ambrosiana serves as the primary custodian of Leonardo da Vinci's original engineering documentation used globally for operational reproductions according to museum documentation",
+        "The Codex Atlanticus exclusively contains Leonardo da Vinci's systematic engineering designs including flying machines and hydraulic systems spanning 1119 pages as confirmed by Biblioteca Ambrosiana's digital archive",
+        "The British Library's Codex Arundel focuses on theoretical notes and does not contain the engineering-focused documentation used for mechanical reproductions like those at the Museo Leonardiano di Vinci",
+        "The institution that permanently archives Leonardo da Vinci's original engineering manuscripts specifically used to create the Museo Leonardiano di Vinci's operational reproductions is the Veneranda Biblioteca Ambrosiana"
+      ],
+      "rejected_devs": [],
+      "solver_answer": "Veneranda Biblioteca Ambrosiana",
+      "answer_agrees": true,
+      "reasoning": "The solver's answer \"Veneranda Biblioteca Ambrosiana\" matches the expected answer exactly, so the answers agree. The solver correctly links Leonardo da Vinci to Vinci, identifies the Museo Leonardiano di Vinci as the venue, and names the Veneranda Biblioteca Ambrosiana as the archive housing the Codex Atlanticus used for the museum's reproductions."
+    },
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-08T16:43:13.077652"
+}

@@ -1,0 +1,27 @@
+{
+  "source_file": "pipeline_result_20260103_185810.json",
+  "expansion_level": 0,
+  "question": "In what country is Chal Siah Manchatun Jowkar?",
+  "expected_answer": "Iran",
+  "solver_answer": "Iran",
+  "subject": "web_search",
+  "constant_ev": [],
+  "derived_ev": [
+    "Chal Siah Manchatun Jowkar is a village in Margown Rural District, Margown District, Boyer-Ahmad County, Kohgiluyeh and Boyer-Ahmad Province, Iran as documented by Wikipedia",
+    "Kohgiluyeh and Boyer-Ahmad Province forms part of Iran's territorial administrative division confirmed through Province → County → District → Rural District hierarchy verification using authoritative sources",
+    "Chal Siah Manchatun Jowkar is located in Iran"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "Iran",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "The solver's answer matches the expected answer exactly, and multiple reliable sources (Wikipedia, Data Commons, and other wiki pages) confirm Chal Siah Manchatun Jowkar is a village in Iran (Kohgiluyeh and Boyer-Ahmad Province), so the solver's conclusion is accurate."
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-07T00:15:00.558995"
+}

@@ -1,0 +1,29 @@
+{
+  "source_file": "pipeline_result_20260103_025021.json",
+  "expansion_level": 0,
+  "question": "Who painted the Mona Lisa?",
+  "expected_answer": "Leonardo da Vinci",
+  "solver_answer": "Leonardo da Vinci",
+  "subject": "web_search",
+  "constant_ev": [],
+  "derived_ev": [
+    "According to Wikipedia, the Mona Lisa is a half-length portrait painting by the Italian artist Leonardo da Vinci",
+    "Britannica states that Leonardo da Vinci began painting the Mona Lisa about 1503, and it was in his studio when he died in 1519",
+    "Smarthistory explicitly identifies the work as Leonardo da Vinci, Portrait of Lisa Gherardini (known as the Mona Lisa), c. 1503–19",
+    "The Louvre Museum's description via PARISCityVISION states the Mona Lisa was painted by Leonardo da Vinci in the 16th century and is displayed at the museum",
+    "The painter of the Mona Lisa is Leonardo da Vinci"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "Leonardo da Vinci",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "The solver's answer matches the expected answer exactly. Both correctly identify Leonardo da Vinci as the artist who painted the Mona Lisa, and the solver's reasoning is factually accurate and supported by authoritative sources."
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-06T20:30:42.171202"
+}

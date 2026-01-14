@@ -1,0 +1,32 @@
+{
+  "source_file": "pipeline_result_20260103_120106.json",
+  "expansion_level": 1,
+  "question": "Determine the kinetic energy of a 5\\,kg object traveling at 10\\,m/s and denote this value as $ K $. Assuming conservation of energy during complete conversion to gravitational potential energy under Earth's standard conditions, compute the maximum vertical height in meters attained by the object using Earth's standard gravitational acceleration, rounding the final result to two decimal places.",
+  "expected_answer": "5.10 m",
+  "solver_answer": "5.1",
+  "subject": "physics",
+  "constant_ev": [
+    "Assume conservation of energy when converting kinetic energy to gravitational potential energy"
+  ],
+  "derived_ev": [
+    "The kinetic energy formula $ KE = \\frac{1}{2}mv^2 $ is confirmed by Calculator Soup, Wikipedia, and Physics LibreTexts.",
+    "The kinetic energy is calculated as 250.0 joules using the formula $ KE = \\frac{1}{2}mv^2 $ with mass 5 kg and velocity 10 m/s.",
+    "The kinetic energy of a 5 kg object moving at 10 m/s is 250 J",
+    "Earth's standard gravitational acceleration is confirmed as 9.80665 m/s² by NIST",
+    "The maximum height calculation yields 5.0986 meters using gravitational potential energy formula PE = mgh with mass 5 kg and kinetic energy 250 J",
+    "The maximum height the 5 kg object could reach when converting 250 J of kinetic energy to gravitational potential energy on Earth is 5.10 meters"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "5.1",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "The solver's answer (5.1) and the expected answer (5.10) are numerically equivalent, both representing the maximum height 5.09858... m rounded to two decimal places. The solver correctly applied KE = ½mv² and conservation of energy (mgh = KE) to obtain this result."
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-06T22:50:21.146636"
+}

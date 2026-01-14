@@ -1,0 +1,42 @@
+{
+  "source_file": "pipeline_result_20260102_234636.json",
+  "expansion_level": 1,
+  "question": "Determine Australia’s constitutionally designated federal capital city through official governmental documentation, then using verified historical archives ascertain the year of its formal establishment as the national seat of government, and identify the specific name of the United States federal statute enacted in that year which established a permanent national institution for monetary policy and financial oversight, confirming it is the sole such landmark legislative achievement enacted in the United States during that period.",
+  "expected_answer": "Federal Reserve Act",
+  "solver_answer": "The Federal Reserve Act of 1913",
+  "subject": "web_search",
+  "constant_ev": [],
+  "derived_ev": [
+    "Canberra is explicitly identified as the federal capital of the Commonwealth of Australia in Britannica's official entry",
+    "The capital of Australia is Canberra",
+    "Canberra was formally established as Australia's capital city on March 12, 1913, according to Australia's official government portal",
+    "The Federal Reserve Act was enacted in the United States on December 23, 1913, as documented in History.com's archival records",
+    "The significant global historical milestone contemporaneous with Canberra's establishment as Australia's capital in 1913 was the enactment of the Federal Reserve Act"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER2",
+    "tier1_result": {
+      "solver_answer": "Federal Reserve Act of 1913",
+      "answer_agrees": false,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "No reasoning provided to explain why the answers agree or disagree."
+    },
+    "tier2_result": {
+      "validated_devs": [
+        "Canberra is explicitly identified as the federal capital of the Commonwealth of Australia in Britannica's official entry",
+        "The capital of Australia is Canberra"
+      ],
+      "rejected_devs": [
+        "Canberra was formally established as Australia's capital city on March 12, 1913, according to Australia's official government portal",
+        "The Federal Reserve Act was enacted in the United States on December 23, 1913, as documented in History.com's archival records",
+        "The significant global historical milestone contemporaneous with Canberra's establishment as Australia's capital in 1913 was the enactment of the Federal Reserve Act"
+      ],
+      "solver_answer": "The Federal Reserve Act of 1913",
+      "answer_agrees": true,
+      "reasoning": "The solver's answer is equivalent to the expected answer because it names the same legislation and simply adds the year 1913 for precision. Verification confirmed the Federal Reserve Act was enacted in 1913 (and Canberra was established in 1913), so the facts and conclusion agree."
+    },
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-06T19:23:28.408519"
+}

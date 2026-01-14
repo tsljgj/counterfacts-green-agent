@@ -1,0 +1,30 @@
+{
+  "source_file": "pipeline_result_20260102_200156.json",
+  "expansion_level": 1,
+  "question": "Determine the director of the film Inception and denote this referenced entity as $x$; then using authoritative biographical and historical archives, identify the globally significant historical event occurring during $x$'s birth year that is verifiably documented as having substantial worldwide impact within its calendar year.",
+  "expected_answer": "Apollo 13",
+  "solver_answer": "Apollo 13 mission",
+  "subject": "web_search",
+  "constant_ev": [],
+  "derived_ev": [
+    "IMDb's search result states that the director of Inception is Christopher Nolan",
+    "Wikipedia's search result confirms that the film Inception was written and directed by Christopher Nolan",
+    "The director of the movie Inception is Christopher Nolan",
+    "Christopher Nolan was born on July 30, 1970, as confirmed by Wikipedia, IMDb, and Britannica",
+    "The Apollo 13 space mission (April 11-17, 1970) was a major historical event during Christopher Nolan's birth year according to History.com and Britannica",
+    "The globally significant historical event that occurred during Christopher Nolan's birth year (1970) is the Apollo 13 space mission"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "Apollo 13 mission",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "The solver verified Christopher Nolan as the director of Inception, his birth year as 1970, and that Apollo 13 occurred in 1970, and the phrasing \"Apollo 13 mission\" is semantically equivalent to \"Apollo 13,\" differing only by an added descriptive word."
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-06T18:38:55.186902"
+}

@@ -1,0 +1,38 @@
+{
+  "source_file": "pipeline_result_20260102_214747.json",
+  "expansion_level": 2,
+  "question": "Given Google was founded in 1998, determine the primary e-commerce platform partner that became PayPal's critical early adopter with PayPal founded in the same year and this partner's payment system replacing physical transaction methods immediately prior to October 1999, designating this entity as $ P $. Using $ P $, compute the year when $ P $ formally acquired PayPal as documented in official corporate announcements and SEC regulatory filings, where the transaction closed in the fourth calendar quarter with regulatory approval granted the preceding day and the acquisition value transacted solely in equity.",
+  "expected_answer": "2002",
+  "solver_answer": "2002",
+  "subject": "web_search",
+  "constant_ev": [],
+  "derived_ev": [
+    "Wikipedia's search result snippet states that Google was founded on September 4, 1998",
+    "The official Google company history page (about.google) confirms that Larry Page and Sergey Brin established Google in 1998",
+    "Britannica states that Google is an American search engine company founded in 1998",
+    "EBSCO's Research Starters specifies that Google's establishment occurred in 1998",
+    "All authoritative sources uniformly agree that Google was founded in 1998 despite minor discrepancies in the exact date",
+    "Google was founded in the year 1998",
+    "Multiple authoritative sources including Wikipedia, Quartr, and Electronic Payments International confirm that eBay became PayPal's primary e-commerce platform partner shortly after PayPal's 1998 founding",
+    "The Los Angeles Times (2002) states that before PayPal was introduced in October 1999, the majority of payments on eBay were made by checks or money orders",
+    "eBay was established as the critical early adopter of PayPal's email payment system founded in 1998",
+    "The primary e-commerce platform partner that became PayPal's critical early adopter is eBay",
+    "eBay Inc. completed its acquisition of PayPal Holdings, Inc. on October 3, 2002 as stated in eBay's official press release archive",
+    "The SEC Form 8-K filing from October 2002 confirms PayPal became a wholly owned subsidiary of eBay when the transaction closed on October 3, 2002",
+    "The New York Times article from October 4, 2002 reports eBay acquired PayPal for $1.5 billion in stock, finalizing the deal on October 3, 2002",
+    "The definitive year when eBay formally acquired PayPal, as documented in eBay's official corporate announcements and SEC filings following their business partnership, is 2002"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "2002",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "The solver correctly identified eBay as PayPal's critical early adopter and that eBay formally acquired PayPal in 2002. Multiple authoritative sources (including SEC filings and major news outlets) confirm the acquisition closed on October 3, 2002 for $1.5 billion in eBay stock, so the solver's answer matches the expected year."
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-06T19:03:04.019783"
+}

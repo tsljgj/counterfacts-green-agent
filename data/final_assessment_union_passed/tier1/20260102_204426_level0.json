@@ -1,0 +1,25 @@
+{
+  "source_file": "pipeline_result_20260102_204426.json",
+  "expansion_level": 0,
+  "question": "How many chromosomes do humans have?",
+  "expected_answer": "46",
+  "solver_answer": "46 chromosomes (23 pairs)",
+  "subject": "biology",
+  "constant_ev": [],
+  "derived_ev": [
+    "Humans have 46 chromosomes"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "46 chromosomes (23 pairs)",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "The solver's answer \"46 chromosomes (23 pairs)\" is equivalent to the expected answer \"46\"—both correctly state humans have 46 chromosomes, with the solver adding accurate context about the 23 pairs."
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-06T18:45:46.488286"
+}

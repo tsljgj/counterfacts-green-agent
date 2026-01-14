@@ -1,0 +1,35 @@
+{
+  "source_file": "pipeline_result_20260103_062951.json",
+  "expansion_level": 1,
+  "question": "For a solution with hydrogen ion concentration $1.0 \\times 10^{-5}$ M, compute the value defined by $-\\log_{10}[\\ce{H+}]$ using the provided logarithmic relation, then determine the pOH at 50°C given the ion product of water $K_w = 5.48 \\times 10^{-14}$ at this temperature, ensuring the calculation exclusively employs the temperature-dependent equilibrium constant without assuming standard conditions.",
+  "expected_answer": "8.26",
+  "solver_answer": "pH = 5.0, pOH = 8.26 at 50°C",
+  "subject": "chemistry",
+  "constant_ev": [
+    "Use pH = -log₁₀[H⁺] when calculating the pH from hydrogen ion concentration",
+    "The hydrogen ion concentration is 1.0 × 10⁻⁵ M for the pH calculation",
+    "Use K_w = 5.48 × 10⁻¹⁴ at 50°C when calculating pOH"
+  ],
+  "derived_ev": [
+    "Purdue Chemistry states that [H₃O⁺] = 10⁻ᵆᵈ, which rearranges to pH = -log₁₀[H⁺]",
+    "Chemistry LibreTexts defines pH as the negative logarithm of the hydrogen-ion concentration",
+    "The result of evaluating -log₁₀(1.0 × 10⁻⁵) using Python is 5.0",
+    "The pH of a solution with a hydrogen ion concentration of 1.0 × 10⁻⁵ M is 5",
+    "The ion product of water at 50°C is 5.48 × 10⁻¹⁴ according to NIST Chemistry WebBook and CRC Handbook of Chemistry and Physics",
+    "For the solution at 50°C, pH + pOH = 13.26",
+    "The pOH of the solution with hydrogen ion concentration 1.0 × 10⁻⁵ M at 50°C is 8.26"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "pH = 5.0, pOH = 8.26 at 50°C",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "The solver used pH = -log[H+] to get pH 5.00 and used Kw at 50°C (5.48×10⁻¹⁴) with [OH⁻]=Kw/[H⁺] to obtain pOH 8.26, which matches the expected value. pH + pOH = pKw (5.00 + 8.26 = 13.26), confirming mathematical consistency."
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-08T18:31:56.663458"
+}

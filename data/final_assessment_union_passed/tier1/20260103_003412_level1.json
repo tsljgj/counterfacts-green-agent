@@ -1,0 +1,27 @@
+{
+  "source_file": "pipeline_result_20260103_003412.json",
+  "expansion_level": 1,
+  "question": "Determine the U.S. President serving throughout the calendar year when the author of *To Kill a Mockingbird* received the foremost annual recognition for fiction literature in the United States, verifying your identification against official presidential tenure records applicable for that entire year.",
+  "expected_answer": "John F. Kennedy",
+  "solver_answer": "John F. Kennedy",
+  "subject": "web_search",
+  "constant_ev": [],
+  "derived_ev": [
+    "The author of To Kill a Mockingbird is Harper Lee",
+    "Harper Lee won the Pulitzer Prize for Fiction in 1961 for 'To Kill a Mockingbird'",
+    "John F. Kennedy was the U.S. President in office during 1961 when Harper Lee received the Pulitzer Prize for 'To Kill a Mockingbird'"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "John F. Kennedy",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "The solver's answer matches because John F. Kennedy was the 35th U.S. President for the entirety of 1961 when Harper Lee won the Pulitzer Prize for Fiction, and web sources confirm both the award and Kennedy's term dates."
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-06T19:41:54.824917"
+}

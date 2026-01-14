@@ -1,0 +1,59 @@
+{
+  "source_file": "pipeline_result_20260103_165836.json",
+  "expansion_level": 2,
+  "question": "Determine the historically significant pharmaceutical product developed prior to May 8, 2020, by the entity holding trademark rights for Botox (where this entity acquired full ownership through a complete acquisition of the original commercial introducer with no intervening intellectual property transfers), such that the product exemplifies core therapeutic applications beyond cosmetic use and was subject to temporary patent enforcement suspension during the early 2020 global health crisis as part of the developer's acknowledged therapeutic legacy; compute the proprietary name of this drug.",
+  "expected_answer": "Kaletra",
+  "solver_answer": "Kaletra",
+  "subject": "web_search",
+  "constant_ev": [],
+  "derived_ev": [
+    "Allergan acquired the Oculinum product from Dr. Alan Scott in 1991 and renamed it \"Botox\" in 1992 according to the NIH article",
+    "Allergan gained FDA approval for Botox in 1989 for medical use (treatment of strabismus) and in 2002 for cosmetic use (reducing frown lines) as reported by The New Yorker and Copper Creek Dental",
+    "Allergan has been the exclusive manufacturer and marketer of Botox since its commercial introduction with the trademark registered under Allergan, Inc. per Wikipedia and Allergan Aesthetics' official website",
+    "Multiple authoritative sources including Business Insider, Full Spectrum Dermatology, and SEV Laser identify Allergan as the company that introduced Botox to the market after acquiring Dr. Scott's original formulation",
+    "The company that introduced Botox is Allergan",
+    "AbbVie completed its acquisition of Allergan plc on May 8, 2020, as documented in SEC Form 8-K filing dated May 8, 2020 (tm2031835d3_8k.htm)",
+    "Allergan's blockbuster products including Botox were transferred to AbbVie as part of the 2020 acquisition terms according to Clarivate healthcare analysis",
+    "AbbVie's Allergan Inc is currently enforcing Botox intellectual property rights as the litigant in patent litigation per Reuters' 2025 report",
+    "The company that currently owns and markets Botox following the 2020 acquisition is AbbVie",
+    "AbbVie developed and commercialized Kaletra (lopinavir/ritonavir), an HIV antiretroviral therapy originally approved by the FDA in 2000 while still part of Abbott Laboratories",
+    "Kaletra became AbbVie's flagship HIV treatment after its 2013 spin-off from Abbott and remained a cornerstone therapeutic through the 2020 Allergan acquisition period",
+    "AbbVie temporarily suspended Kaletra's patent enforcement during the early COVID-19 crisis to facilitate global access for investigational use as documented in STAT News' 2020 coverage",
+    "AbbVie's March 23, 2020 press release formally acknowledged Kaletra's role in their therapeutic legacy during the pandemic response",
+    "The historically significant drug developed prior to the Allergan acquisition that exemplifies AbbVie's core therapeutic focus beyond cosmetic applications is Kaletra"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER2",
+    "tier1_result": {
+      "solver_answer": "Kaletra",
+      "answer_agrees": false,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "No reasoning or explanation was provided for the verification decision."
+    },
+    "tier2_result": {
+      "validated_devs": [
+        "Allergan acquired the Oculinum product from Dr. Alan Scott in 1991 and renamed it \"Botox\" in 1992 according to the NIH article",
+        "Allergan gained FDA approval for Botox in 1989 for medical use (treatment of strabismus) and in 2002 for cosmetic use (reducing frown lines) as reported by The New Yorker and Copper Creek Dental",
+        "Allergan has been the exclusive manufacturer and marketer of Botox since its commercial introduction with the trademark registered under Allergan, Inc. per Wikipedia and Allergan Aesthetics' official website",
+        "Multiple authoritative sources including Business Insider, Full Spectrum Dermatology, and SEV Laser identify Allergan as the company that introduced Botox to the market after acquiring Dr. Scott's original formulation",
+        "The company that introduced Botox is Allergan",
+        "AbbVie completed its acquisition of Allergan plc on May 8, 2020, as documented in SEC Form 8-K filing dated May 8, 2020 (tm2031835d3_8k.htm)",
+        "Allergan's blockbuster products including Botox were transferred to AbbVie as part of the 2020 acquisition terms according to Clarivate healthcare analysis",
+        "AbbVie's Allergan Inc is currently enforcing Botox intellectual property rights as the litigant in patent litigation per Reuters' 2025 report",
+        "The company that currently owns and markets Botox following the 2020 acquisition is AbbVie",
+        "AbbVie developed and commercialized Kaletra (lopinavir/ritonavir), an HIV antiretroviral therapy originally approved by the FDA in 2000 while still part of Abbott Laboratories",
+        "Kaletra became AbbVie's flagship HIV treatment after its 2013 spin-off from Abbott and remained a cornerstone therapeutic through the 2020 Allergan acquisition period",
+        "AbbVie temporarily suspended Kaletra's patent enforcement during the early COVID-19 crisis to facilitate global access for investigational use as documented in STAT News' 2020 coverage",
+        "AbbVie's March 23, 2020 press release formally acknowledged Kaletra's role in their therapeutic legacy during the pandemic response",
+        "The historically significant drug developed prior to the Allergan acquisition that exemplifies AbbVie's core therapeutic focus beyond cosmetic applications is Kaletra"
+      ],
+      "rejected_devs": [],
+      "solver_answer": "Kaletra",
+      "answer_agrees": true,
+      "reasoning": "Both the solver's and expected answer are \"Kaletra\", a direct match; verification confirmed key facts — AbbVie's ownership timeline, Kaletra's FDA approval in 2000, its HIV therapeutic use, AbbVie's March 2020 temporary non-enforcement of patents, and documented public statements — so all criteria are satisfied and the answers agree."
+    },
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-06T23:56:08.568660"
+}

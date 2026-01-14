@@ -1,0 +1,30 @@
+{
+  "source_file": "pipeline_result_20260103_143526.json",
+  "expansion_level": 0,
+  "question": "Who was the first president of the United States?",
+  "expected_answer": "George Washington",
+  "solver_answer": "George Washington",
+  "subject": "web_search",
+  "constant_ev": [
+    "Define the first president of the United States based on the office established by the U.S. Constitution ratified in 1788 when determining the answer"
+  ],
+  "derived_ev": [
+    "The Library of Congress Research Guides explicitly identify George Washington as the first president of the United States",
+    "Wikipedia's entry on the List of Presidents of the United States states that George Washington was the first president under the current U.S. Constitution ratified in 1788",
+    "John Hanson served as President of the Continental Congress under the Articles of Confederation, but the modern presidency established by the U.S. Constitution in 1789 recognizes George Washington as the first president",
+    "The first president of the United States under the U.S. Constitution ratified in 1788 is George Washington"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "George Washington",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "The solver's answer (\"George Washington\") exactly matches the expected answer. Multiple authoritative sources confirm he was the first U.S. president (1789–1797), so the answers agree."
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-06T22:52:14.805011"
+}

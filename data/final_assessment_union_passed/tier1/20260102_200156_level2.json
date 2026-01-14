@@ -1,0 +1,32 @@
+{
+  "source_file": "pipeline_result_20260102_200156.json",
+  "expansion_level": 2,
+  "question": "Determine the director of the film *Inception* denoted as the referenced entity $x$ using authoritative biographical archives; then identify the highest civilian honor awarded to participants of the globally significant historical event occurring during $x$'s birth year, with documentation strictly confined to its calendar year and verified exclusively through U.S. federal archives and NASA mission records without referencing subsequent commemorations or honors.",
+  "expected_answer": "Presidential Medal of Freedom",
+  "solver_answer": "Presidential Medal of Freedom",
+  "subject": "web_search",
+  "constant_ev": [],
+  "derived_ev": [
+    "IMDb's search result states that the director of Inception is Christopher Nolan",
+    "Wikipedia's search result confirms that the film Inception was written and directed by Christopher Nolan",
+    "The director of the movie Inception is Christopher Nolan",
+    "Christopher Nolan was born on July 30, 1970, as confirmed by Wikipedia, IMDb, and Britannica",
+    "The Apollo 13 space mission (April 11-17, 1970) was a major historical event during Christopher Nolan's birth year according to History.com and Britannica",
+    "The globally significant historical event that occurred during Christopher Nolan's birth year (1970) is the Apollo 13 space mission",
+    "President Richard Nixon awarded the Presidential Medal of Freedom to the Apollo 13 astronauts (Lovell, Haise, Swigert) and NASA mission operations team on April 18, 1970, as documented in the National Archives' official records and NASA's mission transcript",
+    "The highest civilian honor awarded to Apollo 13 mission participants during 1970 was the Presidential Medal of Freedom"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "Presidential Medal of Freedom",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "The solver's answer \"Presidential Medal of Freedom\" exactly matches the expected answer, with all supporting facts (Nolan's birth date, Apollo 13 in 1970, and Nixon awarding the medal on April 18, 1970) verified by authoritative sources (NASA, FBI, and presidential archives)."
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-06T18:41:57.111333"
+}

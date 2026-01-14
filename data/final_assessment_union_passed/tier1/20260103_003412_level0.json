@@ -1,0 +1,25 @@
+{
+  "source_file": "pipeline_result_20260103_003412.json",
+  "expansion_level": 0,
+  "question": "Who wrote To Kill a Mockingbird?",
+  "expected_answer": "Harper Lee",
+  "solver_answer": "Harper Lee",
+  "subject": "web_search",
+  "constant_ev": [],
+  "derived_ev": [
+    "The author of To Kill a Mockingbird is Harper Lee"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "Harper Lee",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "The solver's answer \"Harper Lee\" exactly matches the expected answer. Multiple reliable sources confirm she is the author of \"To Kill a Mockingbird,\" so there is no ambiguity."
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-06T19:40:15.758757"
+}

@@ -1,0 +1,31 @@
+{
+  "source_file": "pipeline_result_20260103_052141.json",
+  "expansion_level": 1,
+  "question": "Determine the first woman to win a Nobel Prize, then identify the earliest individual who is both a child of this determined winner and a Nobel laureate, considering only awards granted prior to 1941 to ensure the solution is uniquely defined.",
+  "expected_answer": "Irène Joliot-Curie",
+  "solver_answer": "Irène Joliot-Curie",
+  "subject": "web_search",
+  "constant_ev": [],
+  "derived_ev": [
+    "Marie Skłodowska-Curie was the first woman to receive a Nobel Prize in 1903 according to NobelPrize.org and Wikipedia documentation",
+    "The 1903 Nobel Prize in Physics was awarded jointly to Henri Becquerel, Pierre Curie, and Marie Curie, confirming she was the first female recipient as no woman received the prize in 1901 or 1902",
+    "Marie Curie's 1903 Nobel Prize preceded all other female laureates including Bertha von Suttner (Nobel Peace Prize, 1905) and Selma Lagerlöf (Nobel Prize in Literature, 1909)",
+    "The first woman to win a Nobel Prize was Marie Curie",
+    "Irène Joliot-Curie, daughter of Marie and Pierre Curie, was awarded the Nobel Prize in Chemistry in 1935 alongside her husband Frédéric Joliot-Curie for synthesizing new radioactive elements according to NobelPrize.org and Britannica",
+    "Irène Joliot-Curie became the first person to be both a child of a Nobel laureate (Marie Curie) and a Nobel laureate themselves, as confirmed by the Nobel Foundation's historical records showing no prior child of laureates received the award before her 1935 Chemistry Prize",
+    "The first person to be both a child of a Nobel laureate and a Nobel laureate themselves was Irène Joliot-Curie"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "Irène Joliot-Curie",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "They agree because the solver's answer, Irène Joliot-Curie, matches the expected answer. She was Marie Curie's daughter and won the 1935 Nobel Prize in Chemistry (before 1941), while Ève Curie did not, making Irène the unique solution."
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-06T21:48:34.279172"
+}

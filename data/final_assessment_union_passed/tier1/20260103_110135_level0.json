@@ -1,0 +1,25 @@
+{
+  "source_file": "pipeline_result_20260103_110135.json",
+  "expansion_level": 0,
+  "question": "What organelle is known as the powerhouse of the cell?",
+  "expected_answer": "Mitochondria",
+  "solver_answer": "Mitochondria (or mitochondrion, singular)",
+  "subject": "biology",
+  "constant_ev": [],
+  "derived_ev": [
+    "The organelle known as the powerhouse of the cell is Mitochondria"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "Mitochondria (or mitochondrion, singular)",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "The solver's answer matches the expected answer \"Mitochondria,\" differing only by adding the singular form as grammatical clarification; authoritative sources confirm mitochondria are the unambiguous \"powerhouse of the cell."
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-06T22:38:14.754718"
+}

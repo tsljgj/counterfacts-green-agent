@@ -1,0 +1,38 @@
+{
+  "source_file": "pipeline_result_20260103_143526.json",
+  "expansion_level": 2,
+  "question": "Determine the foundational constitutional amendments proposed by the First United States Congress during the presidency of the individual recognized as the first president of the United States under the office established by the U.S. Constitution ratified in 1788, then identify the most prominent opposition leader whose demands originated from Virginia's 1788 ratification convention and directly compelled Congress to formalize these amendments during the inaugural federal Congress session following ratification, ensuring the solution corresponds uniquely to the historical figure documented as leading anti-federalist efforts that precipitated the amendments' proposal in 1789.",
+  "expected_answer": "Patrick Henry",
+  "solver_answer": "Patrick Henry",
+  "subject": "web_search",
+  "constant_ev": [
+    "Define the first president of the United States based on the office established by the U.S. Constitution ratified in 1788 when determining the answer"
+  ],
+  "derived_ev": [
+    "The Library of Congress Research Guides explicitly identify George Washington as the first president of the United States",
+    "Wikipedia's entry on the List of Presidents of the United States states that George Washington was the first president under the current U.S. Constitution ratified in 1788",
+    "John Hanson served as President of the Continental Congress under the Articles of Confederation, but the modern presidency established by the U.S. Constitution in 1789 recognizes George Washington as the first president",
+    "The first president of the United States under the U.S. Constitution ratified in 1788 is George Washington",
+    "The First United States Congress convened at Federal Hall during George Washington's presidency",
+    "The First United States Congress formally proposed the Bill of Rights in 1789",
+    "The Bill of Rights established critical constitutional protections and was directly connected to George Washington's administration",
+    "The foundational document proposed by the First United States Congress in 1789 during George Washington's presidency was the Bill of Rights",
+    "Patrick Henry is explicitly documented as the most vocal Anti-Federalist leader who led the charge against ratifying the Constitution without explicit protections for individual liberties",
+    "Patrick Henry's demand during Virginia's ratification convention extended to his insistence that amendments must precede ratification, causing James Madison to introduce the Bill of Rights amendments specifically to address Henry's coalition",
+    "Patrick Henry's relentless opposition in Virginia and correspondence with fellow Anti-Federalists directly pressured James Madison to draft what became the Bill of Rights during George Washington's first term",
+    "The most prominent Anti-Federalist leader whose vocal opposition directly compelled Congress to propose the Bill of Rights in 1789 was Patrick Henry"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "Patrick Henry",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "The solver correctly identified Patrick Henry as the prominent Anti-Federalist leader at Virginia's 1788 ratifying convention whose demands for a Bill of Rights pressured the First Congress to propose the amendments in 1789. This matches the expected answer exactly and is supported by multiple historical sources."
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-06T22:54:58.822748"
+}

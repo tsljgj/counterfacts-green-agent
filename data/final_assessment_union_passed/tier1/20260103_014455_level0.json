@@ -1,0 +1,26 @@
+{
+  "source_file": "pipeline_result_20260103_014455.json",
+  "expansion_level": 0,
+  "question": "In what year did World War II end?",
+  "expected_answer": "1945",
+  "solver_answer": "1945",
+  "subject": "web_search",
+  "constant_ev": [],
+  "derived_ev": [
+    "The National WWII Museum's article documents that Nazi Germany surrendered in May 1945 and Imperial Japan surrendered in August 1945",
+    "World War II ended in 1945"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "1945",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "The solver's answer (1945) matches the expected answer (1945) exactly, and both are historically correct. World War II concluded in 1945 with Japan's formal surrender on September 2, 1945, and the solver provided accurate supporting information."
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-06T20:02:58.147640"
+}

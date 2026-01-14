@@ -1,0 +1,31 @@
+{
+  "source_file": "pipeline_result_20260103_062951.json",
+  "expansion_level": 0,
+  "question": "What is the pH of a solution with a hydrogen ion concentration of 1.0 × 10^-5 M?",
+  "expected_answer": "5",
+  "solver_answer": "5.0",
+  "subject": "chemistry",
+  "constant_ev": [
+    "Use pH = -log₁₀[H⁺] when calculating the pH from hydrogen ion concentration",
+    "The hydrogen ion concentration is 1.0 × 10⁻⁵ M for the pH calculation"
+  ],
+  "derived_ev": [
+    "Purdue Chemistry states that [H₃O⁺] = 10⁻ᵆᵈ, which rearranges to pH = -log₁₀[H⁺]",
+    "Chemistry LibreTexts defines pH as the negative logarithm of the hydrogen-ion concentration",
+    "The result of evaluating -log₁₀(1.0 × 10⁻⁵) using Python is 5.0",
+    "The pH of a solution with a hydrogen ion concentration of 1.0 × 10⁻⁵ M is 5"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "5.0",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "The solver's answer (5.0) and the expected answer (5) are numerically equivalent. Using pH = -log10[H+] with [H+] = 1.0×10⁻⁵ M gives pH = 5.0, so the answers agree."
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-06T21:59:23.562413"
+}

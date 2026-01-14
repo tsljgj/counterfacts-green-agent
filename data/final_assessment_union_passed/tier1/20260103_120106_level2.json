@@ -1,0 +1,35 @@
+{
+  "source_file": "pipeline_result_20260103_120106.json",
+  "expansion_level": 2,
+  "question": "Compute the quantity $ Q $ obtained by converting all kinetic energy of a 5\\,kg object moving at 10\\,m/s into gravitational potential energy under Earth's standard gravity with strict energy conservation, rounding $ Q $ to two decimal places; then, using $ Q $ and Mars' surface gravitational acceleration of 3.72076\\,m/s$^2$ under identical energy conversion principles, determine the corresponding value for Mars, rounding the final result to two decimal places.",
+  "expected_answer": "13.44 m",
+  "solver_answer": "13.44",
+  "subject": "physics",
+  "constant_ev": [
+    "Assume conservation of energy when converting kinetic energy to gravitational potential energy"
+  ],
+  "derived_ev": [
+    "The kinetic energy formula $ KE = \\frac{1}{2}mv^2 $ is confirmed by Calculator Soup, Wikipedia, and Physics LibreTexts.",
+    "The kinetic energy is calculated as 250.0 joules using the formula $ KE = \\frac{1}{2}mv^2 $ with mass 5 kg and velocity 10 m/s.",
+    "The kinetic energy of a 5 kg object moving at 10 m/s is 250 J",
+    "Earth's standard gravitational acceleration is confirmed as 9.80665 m/s² by NIST",
+    "The maximum height calculation yields 5.0986 meters using gravitational potential energy formula PE = mgh with mass 5 kg and kinetic energy 250 J",
+    "The maximum height the 5 kg object could reach when converting 250 J of kinetic energy to gravitational potential energy on Earth is 5.10 meters",
+    "Mars' surface gravity is confirmed as 3.72076 m/s² from the NASA Mars Fact Sheet via web search",
+    "The maximum height calculation on Mars yields 13.4382 meters using Earth's precise height value (5.0986 m) and exact gravitational ratio",
+    "The maximum height the 5 kg object could reach on Mars when converting 250 J of kinetic energy to gravitational potential energy is 13.44 meters"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "13.44",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "The solver correctly computed the kinetic energy as 250 J and used energy conservation to find the height on Mars (250 J / (5 kg × 3.72076 m/s²) ≈ 13.44 m), which matches the expected answer."
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-06T22:51:19.949876"
+}

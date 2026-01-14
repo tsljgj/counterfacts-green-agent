@@ -1,0 +1,29 @@
+{
+  "source_file": "pipeline_result_20260103_045736.json",
+  "expansion_level": 0,
+  "question": "Who were the Wright Brothers?",
+  "expected_answer": "Orville and Wilbur Wright",
+  "solver_answer": "The Wright Brothers were Orville and Wilbur Wright, American aviation pioneers who invented and flew the world's first successful airplane in 1903.",
+  "subject": "web_search",
+  "constant_ev": [],
+  "derived_ev": [
+    "The Smithsonian Institution Archives identifies Wilbur Wright (April 16, 1867–May 30, 1912) and Orville Wright (August 19, 1871–January 30, 1948) as the inventors of the first successful airplane",
+    "The Library of Congress Wright Brothers collection confirms Orville and Wilbur Wright as the aviation pioneers who developed aviation technology",
+    "The National Park Service explicitly names Orville and Wilbur Wright as the sons of Milton and Susan Wright",
+    "Wikipedia's entry consolidates that the Wright brothers, Orville Wright (August 19, 1871 – January 30, 1948) and Wilbur Wright (April 16, 1867 – May 30, 1912), were American aviation pioneers who achieved the first powered flight",
+    "The Wright Brothers were Orville and Wilbur Wright, American aviation pioneers who invented the first successful powered airplane"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "The Wright Brothers were Orville and Wilbur Wright, American aviation pioneers who invented and flew the world's first successful airplane in 1903.",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "Both answers give the same core identification—Orville and Wilbur Wright—and the solver's answer adds accurate, verifiable historical context (American nationality, first successful airplane flight in 1903), so it fully agrees with the expected answer."
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-06T21:37:00.877341"
+}

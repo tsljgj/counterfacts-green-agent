@@ -1,0 +1,30 @@
+{
+  "source_file": "pipeline_result_20260102_214747.json",
+  "expansion_level": 0,
+  "question": "What year was Google founded?",
+  "expected_answer": "1998",
+  "solver_answer": "1998",
+  "subject": "web_search",
+  "constant_ev": [],
+  "derived_ev": [
+    "Wikipedia's search result snippet states that Google was founded on September 4, 1998",
+    "The official Google company history page (about.google) confirms that Larry Page and Sergey Brin established Google in 1998",
+    "Britannica states that Google is an American search engine company founded in 1998",
+    "EBSCO's Research Starters specifies that Google's establishment occurred in 1998",
+    "All authoritative sources uniformly agree that Google was founded in 1998 despite minor discrepancies in the exact date",
+    "Google was founded in the year 1998"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "1998",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "The solver's answer matches the expected answer exactly, and multiple authoritative sources (Wikipedia, Google's official information, Encyclopedia Britannica) confirm Google was founded on September 4, 1998 by Larry Page and Sergey Brin. Therefore the solver's reasoning is accurate and well-supported."
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-06T19:00:24.644233"
+}

@@ -64,7 +64,7 @@ class Agent:
         self.messenger = Messenger()
 
         # Load dataset
-        dataset_path = Path(__file__).parent.parent / "data" / "sample_questions.jsonl"
+        dataset_path = Path(__file__).parent.parent / "data" / "final_assessment_union_passed"
         self.dataset = QADataset(dataset_path)
 
         # Initialize evaluator (will use OPENAI_API_KEY from environment)

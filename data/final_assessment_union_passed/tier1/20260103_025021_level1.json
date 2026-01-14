@@ -1,0 +1,32 @@
+{
+  "source_file": "pipeline_result_20260103_025021.json",
+  "expansion_level": 1,
+  "question": "Determine the entity associated with the Mona Lisa painting's creation; utilizing the place-based modifier intrinsic to this entity's formal identifier, identify the singular museum institution operating within the corresponding municipality that specializes in exhibiting operational reproductions derived exclusively from the entity's preserved engineering documentation, confirming this venue's designation remains unambiguous among all cultural establishments honoring the entity's contributions within the region.",
+  "expected_answer": "Museo Leonardiano di Vinci",
+  "solver_answer": "Museo Leonardiano di Vinci** (Leonardian Museum of Vinci)",
+  "subject": "web_search",
+  "constant_ev": [],
+  "derived_ev": [
+    "According to Wikipedia, the Mona Lisa is a half-length portrait painting by the Italian artist Leonardo da Vinci",
+    "Britannica states that Leonardo da Vinci began painting the Mona Lisa about 1503, and it was in his studio when he died in 1519",
+    "Smarthistory explicitly identifies the work as Leonardo da Vinci, Portrait of Lisa Gherardini (known as the Mona Lisa), c. 1503–19",
+    "The Louvre Museum's description via PARISCityVISION states the Mona Lisa was painted by Leonardo da Vinci in the 16th century and is displayed at the museum",
+    "The painter of the Mona Lisa is Leonardo da Vinci",
+    "Leonardo da Vinci was born on April 15, 1452 in Anchiano, a hamlet near Vinci, Italy, as confirmed by Britannica and Visit Tuscany",
+    "The Museo Leonardiano di Vinci was established in 1953 on Leonardo's birthday in Vinci to preserve and exhibit models based on his engineering drawings and manuscripts, according to official tourism sources and museum documentation",
+    "The primary museum established in Vinci to honor Leonardo da Vinci is the Museo Leonardiano di Vinci"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "Museo Leonardiano di Vinci** (Leonardian Museum of Vinci)",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "The solver correctly identified Leonardo da Vinci, interpreted \"da Vinci\" as indicating his birthplace, and named the Museo Leonardiano di Vinci as the museum housing working models from Leonardo's engineering drawings; thus their answer matches the expected one, differing only by an added English translation."
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-06T20:31:47.289819"
+}

@@ -1,0 +1,25 @@
+{
+  "source_file": "pipeline_result_20260103_010930.json",
+  "expansion_level": 0,
+  "question": "Which band released the album Abbey Road?",
+  "expected_answer": "The Beatles",
+  "solver_answer": "The Beatles",
+  "subject": "web_search",
+  "constant_ev": [],
+  "derived_ev": [
+    "The band that released the album Abbey Road is The Beatles"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "The Beatles",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "The solver's answer \"The Beatles\" exactly matches the expected answer. Web search confirms Abbey Road is the Beatles' eleventh studio album released on September 26, 1969, so both answers are factually correct and in complete agreement."
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-06T19:47:26.124644"
+}

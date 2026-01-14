@@ -1,0 +1,30 @@
+{
+  "source_file": "pipeline_result_20260102_232346.json",
+  "expansion_level": 0,
+  "question": "Who holds the record for most Olympic gold medals?",
+  "expected_answer": "Michael Phelps",
+  "solver_answer": "Michael Phelps",
+  "subject": "web_search",
+  "constant_ev": [
+    "Consider Olympic records valid as of 2024 when determining the current record holder"
+  ],
+  "derived_ev": [
+    "Michael Phelps holds the all-time record for Olympic gold medals with 23 golds across five Olympic Games (2000-2016)",
+    "Larisa Latynina holds the second-highest Olympic gold medal count among women with 9 gold medals",
+    "Mark Spitz holds the second-highest Olympic gold medal count among men with 9 gold medals prior to Michael Phelps' dominance",
+    "The athlete with the most Olympic gold medals is Michael Phelps"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "Michael Phelps",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "The solver's answer \"Michael Phelps\" matches the expected answer and is supported by multiple authoritative sources confirming he holds the record with 23 Olympic gold medals (28 total medals, career 2004–2016), so the answers agree."
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-06T19:09:32.598741"
+}

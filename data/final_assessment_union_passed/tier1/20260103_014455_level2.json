@@ -1,0 +1,32 @@
+{
+  "source_file": "pipeline_result_20260103_014455.json",
+  "expansion_level": 2,
+  "question": "Determine the epoch corresponding to World War II's conclusion and identify the principal entity established thereafter whose founding document preamble explicitly states \"to save succeeding generations from the scourge of war\" as its foundational purpose directly resulting from the conflict, with formal inception occurring within the same discrete temporal interval as the determined epoch and verified to precede the interval's terminal month; using this referenced entity's historical documentation, determine the city where its founding document was formally signed during the diplomatic conference convened in direct response to the conflict's conclusion, ensuring the signing occurred within the epoch's temporal interval prior to its terminal month.",
+  "expected_answer": "San Francisco",
+  "solver_answer": "San Francisco",
+  "subject": "web_search",
+  "constant_ev": [],
+  "derived_ev": [
+    "The National WWII Museum's article documents that Nazi Germany surrendered in May 1945 and Imperial Japan surrendered in August 1945",
+    "World War II ended in 1945",
+    "The United Nations was formally established on October 24, 1945, after its Charter was ratified by the required number of nations",
+    "The United Nations Charter preamble states it was created 'to save succeeding generations from the scourge of war' following World War II's conclusion",
+    "The major international organization established in 1945 as a direct consequence of World War II's conclusion was the United Nations",
+    "The UN Charter was formally signed on June 26, 1945, at the San Francisco War Memorial and Performing Arts Center following the United Nations Conference on International Organization",
+    "The United Nations Conference on International Organization directly convened in response to World War II's conclusion in 1945, with 50 nations signing the charter in San Francisco",
+    "The specific city where the UN founding charter was officially signed during the diplomatic conference concluding World War II's immediate aftermath is San Francisco"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "San Francisco",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "They agree because the solver's answer \"San Francisco\" matches verified facts: the UN Charter was signed on June 26, 1945 in San Francisco, which precedes World War II's formal end on September 2, 1945."
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-06T20:09:51.720988"
+}

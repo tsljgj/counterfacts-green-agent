@@ -1,0 +1,29 @@
+{
+  "source_file": "pipeline_result_20260103_165836.json",
+  "expansion_level": 0,
+  "question": "What company introduced Botox?",
+  "expected_answer": "Allergan",
+  "solver_answer": "Allergan",
+  "subject": "web_search",
+  "constant_ev": [],
+  "derived_ev": [
+    "Allergan acquired the Oculinum product from Dr. Alan Scott in 1991 and renamed it \"Botox\" in 1992 according to the NIH article",
+    "Allergan gained FDA approval for Botox in 1989 for medical use (treatment of strabismus) and in 2002 for cosmetic use (reducing frown lines) as reported by The New Yorker and Copper Creek Dental",
+    "Allergan has been the exclusive manufacturer and marketer of Botox since its commercial introduction with the trademark registered under Allergan, Inc. per Wikipedia and Allergan Aesthetics' official website",
+    "Multiple authoritative sources including Business Insider, Full Spectrum Dermatology, and SEV Laser identify Allergan as the company that introduced Botox to the market after acquiring Dr. Scott's original formulation",
+    "The company that introduced Botox is Allergan"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "Allergan",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "The solver's answer \"Allergan\" matches the expected answer exactly, because Allergan acquired Oculinum in 1991 and rebranded the product as \"Botox\" in 1992, and both the search results and the solver's reasoning confirm this with no ambiguity."
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-08T20:41:52.758926"
+}

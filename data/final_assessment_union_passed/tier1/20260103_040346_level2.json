@@ -1,0 +1,39 @@
+{
+  "source_file": "pipeline_result_20260103_040346.json",
+  "expansion_level": 2,
+  "question": "Solve for the individual identified as the singular founder of Microsoft per standard problem statement conventions; then determine the specific initiative documented by its implementing partners as one of the longest-running and most significant commitments of the organization co-founded by this person, where the problem statement specifies \"the founder\" in singular form requiring identification of the primary founder when multiple co-founders exist; using the referenced initiative, identify the country previously among the most polio-endemic nations that achieved official polio-free certification status through this initiative's direct efforts, confirming polio-free certification status via WHO verification records.",
+  "expected_answer": "India",
+  "solver_answer": "India",
+  "subject": "web_search",
+  "constant_ev": [
+    "The problem statement specifies 'the founder' in singular form, requiring identification of the primary founder when multiple co-founders exist.",
+    "Use WHO verification records to confirm polio-free certification status when identifying the country that was previously among the most polio-endemic nations"
+  ],
+  "derived_ev": [
+    "Microsoft was founded by Bill Gates and Paul Allen on April 4, 1975, according to web search results from authoritative sources including Wikipedia, Microsoft's official announcement, and History.com",
+    "Wikipedia's Microsoft entry states the company was founded by Bill Gates and Paul Allen to market BASIC interpreters for the Altair 8800",
+    "Microsoft's official historical announcement identifies Bill Gates and Paul Allen as the founders who started the company",
+    "Bill Gates' LinkedIn profile explicitly lists him as the co-founder of Microsoft",
+    "Paul Allen is consistently recognized as a co-founder across all sources, but Bill Gates is established as the primary founder due to the question's singular phrasing and dominant cultural recognition",
+    "The founder of Microsoft, as determined by the singular form of the question and verified through authoritative source analysis, is Bill Gates",
+    "The Bill & Melinda Gates Foundation has committed more than $4 billion to the Global Polio Eradication Initiative since its inception, identifying polio eradication as one of their oldest and most significant commitments",
+    "The World Health Organization states that the Bill & Melinda Gates Foundation is a core partner in the Global Polio Eradication Initiative, providing strategic funding and technical support since 1999",
+    "Bill Gates' major global health initiative through the Bill & Melinda Gates Foundation is the Global Polio Eradication Initiative",
+    "The WHO South-East Asia Region was certified polio-free in 2014, with India accounting for over 60% of global polio cases in 2009 according to WHO documentation",
+    "India achieved polio-free certification in 2014, eliminating transmission in the country previously considered the most challenging environment for polio eradication due to population density and sanitation challenges per GPEI's historical timeline",
+    "The country that was previously among the most polio-endemic nations but achieved official polio-free certification through the Global Polio Eradication Initiative's direct efforts, as documented by WHO verification records, is India"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "India",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "The solver's answer (India) directly matches the expected answer, and all components are correctly answered—Bill Gates as the singular founder, the Global Polio Eradication Initiative as the Gates Foundation's major commitment, and India as WHO-certified polio-free on March 27, 2014. These claims are well-supported by multiple authoritative sources."
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-06T21:16:39.880372"
+}

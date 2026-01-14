@@ -1,0 +1,27 @@
+{
+  "source_file": "pipeline_result_20260103_120106.json",
+  "expansion_level": 0,
+  "question": "What is the kinetic energy of a 5 kg object moving at 10 m/s?",
+  "expected_answer": "250 J",
+  "solver_answer": "250 J",
+  "subject": "physics",
+  "constant_ev": [],
+  "derived_ev": [
+    "The kinetic energy formula $ KE = \\frac{1}{2}mv^2 $ is confirmed by Calculator Soup, Wikipedia, and Physics LibreTexts.",
+    "The kinetic energy is calculated as 250.0 joules using the formula $ KE = \\frac{1}{2}mv^2 $ with mass 5 kg and velocity 10 m/s.",
+    "The kinetic energy of a 5 kg object moving at 10 m/s is 250 J"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "250 J",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "The solver correctly applied KE = ½mv² with m = 5 kg and v = 10 m/s (0.5 × 5 × 100 = 250 J), and an independent Python check confirmed 250 J, so the answers agree."
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-06T22:49:59.291042"
+}

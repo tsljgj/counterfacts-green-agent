@@ -1,0 +1,27 @@
+{
+  "source_file": "pipeline_result_20260102_200156.json",
+  "expansion_level": 0,
+  "question": "Who directed the movie Inception?",
+  "expected_answer": "Christopher Nolan",
+  "solver_answer": "Christopher Nolan",
+  "subject": "web_search",
+  "constant_ev": [],
+  "derived_ev": [
+    "IMDb's search result states that the director of Inception is Christopher Nolan",
+    "Wikipedia's search result confirms that the film Inception was written and directed by Christopher Nolan",
+    "The director of the movie Inception is Christopher Nolan"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "Christopher Nolan",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "The solver's answer matches the expected answer exactly, and verification via multiple reliable sources (Wikipedia, IMDb, Rotten Tomatoes) confirms Christopher Nolan directed Inception, so the answers agree."
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-06T18:38:15.887461"
+}

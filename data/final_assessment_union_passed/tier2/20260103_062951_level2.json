@@ -1,0 +1,55 @@
+{
+  "source_file": "pipeline_result_20260103_062951.json",
+  "expansion_level": 2,
+  "question": "For a solution with hydrogen ion concentration $1.0 \\times 10^{-5}$ M, compute the value defined by $-\\log_{10}[\\ce{H+}]$; then, using this computed quantity together with the ion product of water $K_w = 5.48 \\times 10^{-14}$ at 50°C and standard enthalpy change $\\Delta H^\\circ = 55.84\\ \\text{kJ/mol}$ for water autoionization, determine the Celsius temperature where the pOH equals 8.0 by strictly applying the van't Hoff equation without assuming standard conditions.",
+  "expected_answer": "59.6",
+  "solver_answer": "59.6°C",
+  "subject": "chemistry",
+  "constant_ev": [
+    "Use pH = -log₁₀[H⁺] when calculating the pH from hydrogen ion concentration",
+    "The hydrogen ion concentration is 1.0 × 10⁻⁵ M for the pH calculation",
+    "Use K_w = 5.48 × 10⁻¹⁴ at 50°C when calculating pOH"
+  ],
+  "derived_ev": [
+    "Purdue Chemistry states that [H₃O⁺] = 10⁻ᵆᵈ, which rearranges to pH = -log₁₀[H⁺]",
+    "Chemistry LibreTexts defines pH as the negative logarithm of the hydrogen-ion concentration",
+    "The result of evaluating -log₁₀(1.0 × 10⁻⁵) using Python is 5.0",
+    "The pH of a solution with a hydrogen ion concentration of 1.0 × 10⁻⁵ M is 5",
+    "The ion product of water at 50°C is 5.48 × 10⁻¹⁴ according to NIST Chemistry WebBook and CRC Handbook of Chemistry and Physics",
+    "For the solution at 50°C, pH + pOH = 13.26",
+    "The pOH of the solution with hydrogen ion concentration 1.0 × 10⁻⁵ M at 50°C is 8.26",
+    "The standard enthalpy change (ΔH°) for water autoionization is 55.84 kJ/mol according to Chemistry LibreTexts and Canadian Science Publishing",
+    "For a solution with hydrogen ion concentration 1.0 × 10⁻⁵ M and pOH = 8.0, the ion product of water K_w is 1.0 × 10⁻¹³",
+    "The temperature at which a solution with hydrogen ion concentration 1.0 × 10⁻⁵ M has a pOH of 8.0 is 59.6°C"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER2",
+    "tier1_result": {
+      "solver_answer": "59.6°C",
+      "answer_agrees": false,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "The verification was performed step by step by checking both the calculations and the reasoning, ensuring consistency between them."
+    },
+    "tier2_result": {
+      "validated_devs": [
+        "Purdue Chemistry states that [H₃O⁺] = 10⁻ᵆᵈ, which rearranges to pH = -log₁₀[H⁺]",
+        "Chemistry LibreTexts defines pH as the negative logarithm of the hydrogen-ion concentration",
+        "The result of evaluating -log₁₀(1.0 × 10⁻⁵) using Python is 5.0",
+        "The pH of a solution with a hydrogen ion concentration of 1.0 × 10⁻⁵ M is 5",
+        "The ion product of water at 50°C is 5.48 × 10⁻¹⁴ according to NIST Chemistry WebBook and CRC Handbook of Chemistry and Physics",
+        "For the solution at 50°C, pH + pOH = 13.26",
+        "The pOH of the solution with hydrogen ion concentration 1.0 × 10⁻⁵ M at 50°C is 8.26",
+        "The standard enthalpy change (ΔH°) for water autoionization is 55.84 kJ/mol according to Chemistry LibreTexts and Canadian Science Publishing",
+        "For a solution with hydrogen ion concentration 1.0 × 10⁻⁵ M and pOH = 8.0, the ion product of water K_w is 1.0 × 10⁻¹³",
+        "The temperature at which a solution with hydrogen ion concentration 1.0 × 10⁻⁵ M has a pOH of 8.0 is 59.6°C"
+      ],
+      "rejected_devs": [],
+      "solver_answer": "59.6°C",
+      "answer_agrees": true,
+      "reasoning": "The solver correctly applied the van't Hoff equation and performed sound calculations—computing pH from [H+], determining Kw at pOH = 8.0, and using ΔH° to solve for T₂. The resulting temperature 59.6°C is confirmed by independent calculation."
+    },
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-06T22:11:03.877070"
+}

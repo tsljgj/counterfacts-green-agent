@@ -53,17 +53,44 @@ docker run -p 9009:9009 my-agent
 
 ## Testing
 
-Run A2A conformance tests against your agent.
+### A2A Conformance Tests
+
+Run A2A conformance tests to validate protocol compliance:
 
 ```bash
 # Install test dependencies
 uv sync --extra test
+
+# Set OpenAI API key (required for the evaluator)
+export OPENAI_API_KEY="your-key-here"
 
 # Start your agent (uv or docker; see above)
 
 # Run tests against your running agent URL
 uv run pytest --agent-url http://localhost:9009
 ```
+
+### Testing with a Purple Agent
+
+Test your green agent's evaluation capabilities with a purple agent:
+
+```bash
+# Terminal 1: Start the test purple agent
+cd test-purple-agent
+export OPENAI_API_KEY="your-key-here"
+uv sync
+uv run src/server.py
+
+# Terminal 2: Start your green agent
+export OPENAI_API_KEY="your-key-here"
+uv run src/server.py
+
+# Terminal 3: Run the assessment
+export OPENAI_API_KEY="your-key-here"
+uv run test_interaction.py --num-tasks 5
+```
+
+See [TESTING_WITH_PURPLE_AGENT.md](TESTING_WITH_PURPLE_AGENT.md) for detailed testing instructions and [SETUP.md](SETUP.md) for configuration help.
 
 ## Publishing
 

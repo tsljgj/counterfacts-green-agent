@@ -1,0 +1,23 @@
+# Local testing scenario for AQA green agent
+# This file configures how to test your green agent with a purple agent
+
+[assessment]
+# The assessment configuration passed to the green agent
+config = { num_tasks = 5, difficulty = ["easy", "medium"], seed = 42 }
+
+[green_agent]
+# Your AQA green agent
+name = "AQA Green Agent"
+command = "uv run src/server.py --host 0.0.0.0 --port 9009"
+host = "localhost"
+port = 9009
+# For submission, replace with: agentbeats_id = "your-registered-id"
+
+[[participants]]
+# The purple agent being tested
+role = "agent"
+name = "Simple QA Agent"
+command = "cd test-purple-agent && uv sync && uv run src/server.py --host 0.0.0.0 --port 9010"
+host = "localhost"
+port = 9010
+# For submission, replace with: agentbeats_id = "purple-agent-id"

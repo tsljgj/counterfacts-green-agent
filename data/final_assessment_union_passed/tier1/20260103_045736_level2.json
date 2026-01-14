@@ -1,0 +1,33 @@
+{
+  "source_file": "pipeline_result_20260103_045736.json",
+  "expansion_level": 2,
+  "question": "Determine the two individuals recognized for inventing the first successful powered airplane technology, then identify the major international historical event occurring in the birth year of the elder among them that constitutes a foundational political unification establishing a sovereign nation-state distinct from territorial transfers or colonial administrative changes; using the determined political unification, compute the name of the inaugural political leader who assumed office on its effective date as verified by authoritative national encyclopedias.",
+  "expected_answer": "Sir John A. Macdonald",
+  "solver_answer": "Sir John Alexander Macdonald",
+  "subject": "web_search",
+  "constant_ev": [],
+  "derived_ev": [
+    "The Smithsonian Institution Archives identifies Wilbur Wright (April 16, 1867–May 30, 1912) and Orville Wright (August 19, 1871–January 30, 1948) as the inventors of the first successful airplane",
+    "The Library of Congress Wright Brothers collection confirms Orville and Wilbur Wright as the aviation pioneers who developed aviation technology",
+    "The National Park Service explicitly names Orville and Wilbur Wright as the sons of Milton and Susan Wright",
+    "Wikipedia's entry consolidates that the Wright brothers, Orville Wright (August 19, 1871 – January 30, 1948) and Wilbur Wright (April 16, 1867 – May 30, 1912), were American aviation pioneers who achieved the first powered flight",
+    "The Wright Brothers were Orville and Wilbur Wright, American aviation pioneers who invented the first successful powered airplane",
+    "1867 marks the year of Canadian Confederation when the British North America Act united the colonies of Canada, New Brunswick, and Nova Scotia into the Dominion of Canada on July 1, 1867",
+    "The major international historical event that occurred in 1867 was the creation of the Dominion of Canada through Canadian Confederation",
+    "Sir John A. Macdonald assumed office as Canada's first Prime Minister on July 1, 1867, the same day the British North America Act came into effect according to The Canadian Encyclopedia and Encyclopedia Britannica",
+    "Sir John A. Macdonald became the inaugural Prime Minister of the Dominion of Canada on July 1, 1867, following the Canadian Confederation that established the new sovereign entity"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "Sir John Alexander Macdonald",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "Both answers refer to the same historical figure: the solver provided the full formal name \"Sir John Alexander Macdonald\" while the expected answer used the abbreviated \"Sir John A. Macdonald\", so they are equivalent and factually correct."
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-06T21:42:43.824734"
+}

@@ -6,6 +6,14 @@ from typing import Optional
 from pydantic import BaseModel
 
 
+# Map expansion_level to difficulty names
+LEVEL_TO_DIFFICULTY = {
+    0: "easy",
+    1: "medium",
+    2: "hard"
+}
+
+
 class Question(BaseModel):
     """A single QA question."""
     qid: str
@@ -20,26 +28,48 @@ class QADataset:
     """Loads and samples questions from the AQA dataset."""
 
     def __init__(self, dataset_path: str | Path):
-        """Load dataset from JSONL file.
+        """Load dataset from directory containing tier folders.
 
         Args:
-            dataset_path: Path to the JSONL dataset file
+            dataset_path: Path to the dataset directory (containing tier1/, tier2/ folders)
         """
         self.dataset_path = Path(dataset_path)
         self.questions: list[Question] = []
         self._load_dataset()
 
     def _load_dataset(self) -> None:
-        """Load questions from JSONL file."""
+        """Load questions from tier directories."""
         if not self.dataset_path.exists():
             raise FileNotFoundError(f"Dataset not found: {self.dataset_path}")
 
-        with open(self.dataset_path, 'r', encoding='utf-8') as f:
-            for line in f:
-                line = line.strip()
-                if line:
-                    data = json.loads(line)
-                    self.questions.append(Question(**data))
+        # Load from tier1 and tier2 directories
+        for tier_dir in ["tier1", "tier2"]:
+            tier_path = self.dataset_path / tier_dir
+            if not tier_path.exists():
+                continue
+
+            for json_file in tier_path.glob("*.json"):
+                with open(json_file, 'r', encoding='utf-8') as f:
+                    data = json.load(f)
+
+                # Map fields from new format to expected format
+                expansion_level = data.get("expansion_level", 0)
+                difficulty = LEVEL_TO_DIFFICULTY.get(expansion_level, "medium")
+
+                question = Question(
+                    qid=json_file.stem,
+                    difficulty=difficulty,
+                    question=data["question"],
+                    reference_answer=data["expected_answer"],
+                    domain=data.get("subject"),
+                    metadata={
+                        "tier": tier_dir,
+                        "expansion_level": expansion_level,
+                        "source_file": data.get("source_file"),
+                        "assessment": data.get("assessment"),
+                    }
+                )
+                self.questions.append(question)
 
     def sample_questions(
         self,

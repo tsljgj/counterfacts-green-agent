@@ -1,0 +1,25 @@
+{
+  "source_file": "pipeline_result_20260103_194259.json",
+  "expansion_level": 0,
+  "question": "What does CNN stand for?",
+  "expected_answer": "Cable News Network",
+  "solver_answer": "Cable News Network",
+  "subject": "web_search",
+  "constant_ev": [],
+  "derived_ev": [
+    "The acronym CNN stands for Cable News Network"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "Cable News Network",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "The solver correctly answered that CNN stands for \"Cable News Network,\" which exactly matches the expected answer. Although unnecessary, the solver supported this with authoritative sources, confirming the response is straightforward and correct."
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-07T00:32:26.314222"
+}

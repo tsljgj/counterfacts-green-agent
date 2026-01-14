@@ -1,0 +1,52 @@
+{
+  "source_file": "pipeline_result_20260103_040346.json",
+  "expansion_level": 1,
+  "question": "Solve for the individual identified as the singular founder of Microsoft per standard problem statement conventions; then determine the specific global health initiative documented by its implementing partners as one of the longest-running and most significant commitments of the organization co-founded by this person, ensuring your solution reflects verifiable international partnership records.",
+  "expected_answer": "Global Polio Eradication Initiative",
+  "solver_answer": "Global Polio Eradication Initiative (GPEI)",
+  "subject": "web_search",
+  "constant_ev": [
+    "The problem statement specifies 'the founder' in singular form, requiring identification of the primary founder when multiple co-founders exist."
+  ],
+  "derived_ev": [
+    "Microsoft was founded by Bill Gates and Paul Allen on April 4, 1975, according to web search results from authoritative sources including Wikipedia, Microsoft's official announcement, and History.com",
+    "Wikipedia's Microsoft entry states the company was founded by Bill Gates and Paul Allen to market BASIC interpreters for the Altair 8800",
+    "Microsoft's official historical announcement identifies Bill Gates and Paul Allen as the founders who started the company",
+    "Bill Gates' LinkedIn profile explicitly lists him as the co-founder of Microsoft",
+    "Paul Allen is consistently recognized as a co-founder across all sources, but Bill Gates is established as the primary founder due to the question's singular phrasing and dominant cultural recognition",
+    "The founder of Microsoft, as determined by the singular form of the question and verified through authoritative source analysis, is Bill Gates",
+    "The Bill & Melinda Gates Foundation has committed more than $4 billion to the Global Polio Eradication Initiative since its inception, identifying polio eradication as one of their oldest and most significant commitments",
+    "The World Health Organization states that the Bill & Melinda Gates Foundation is a core partner in the Global Polio Eradication Initiative, providing strategic funding and technical support since 1999",
+    "Bill Gates' major global health initiative through the Bill & Melinda Gates Foundation is the Global Polio Eradication Initiative"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER2",
+    "tier1_result": {
+      "solver_answer": "Bill Gates; Gavi, the Vaccine Alliance (with the Gates Foundation's initial $750 million commitment in 1999 being the longest-running global health initiative)",
+      "answer_agrees": false,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "The text contains only a statement of intent to verify facts and provides no verification decision, so there is no basis to state whether the answers agree or disagree."
+    },
+    "tier2_result": {
+      "validated_devs": [
+        "Microsoft was founded by Bill Gates and Paul Allen on April 4, 1975, according to web search results from authoritative sources including Wikipedia, Microsoft's official announcement, and History.com",
+        "Wikipedia's Microsoft entry states the company was founded by Bill Gates and Paul Allen to market BASIC interpreters for the Altair 8800",
+        "Microsoft's official historical announcement identifies Bill Gates and Paul Allen as the founders who started the company",
+        "Bill Gates' LinkedIn profile explicitly lists him as the co-founder of Microsoft",
+        "Paul Allen is consistently recognized as a co-founder across all sources, but Bill Gates is established as the primary founder due to the question's singular phrasing and dominant cultural recognition",
+        "The founder of Microsoft, as determined by the singular form of the question and verified through authoritative source analysis, is Bill Gates",
+        "Bill Gates' major global health initiative through the Bill & Melinda Gates Foundation is the Global Polio Eradication Initiative"
+      ],
+      "rejected_devs": [
+        "The Bill & Melinda Gates Foundation has committed more than $4 billion to the Global Polio Eradication Initiative since its inception, identifying polio eradication as one of their oldest and most significant commitments",
+        "The World Health Organization states that the Bill & Melinda Gates Foundation is a core partner in the Global Polio Eradication Initiative, providing strategic funding and technical support since 1999"
+      ],
+      "solver_answer": "Global Polio Eradication Initiative (GPEI)",
+      "answer_agrees": true,
+      "reasoning": "They agree because the solver's answer is equivalent to the expected answer (adding only the acronym) and the factual claims about GPEI's status, founder identification, and the Gates Foundation's commitment are supported by multiple authoritative sources."
+    },
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-06T21:04:52.404268"
+}

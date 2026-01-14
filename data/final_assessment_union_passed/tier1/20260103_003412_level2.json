@@ -1,0 +1,28 @@
+{
+  "source_file": "pipeline_result_20260103_003412.json",
+  "expansion_level": 2,
+  "question": "Determine the U.S. President serving throughout the calendar year when the author of *To Kill a Mockingbird* received the Pulitzer Prize for Fiction, then identify the civil rights leader who provided principal mentorship during a critical school desegregation initiative occurring entirely within the presidential term immediately preceding the referenced administration, validating the leader's documented organizational presidency during the event through archival chapter records.",
+  "expected_answer": "Daisy Bates",
+  "solver_answer": "Daisy Bates",
+  "subject": "web_search",
+  "constant_ev": [],
+  "derived_ev": [
+    "The author of To Kill a Mockingbird is Harper Lee",
+    "Harper Lee won the Pulitzer Prize for Fiction in 1961 for 'To Kill a Mockingbird'",
+    "John F. Kennedy was the U.S. President in office during 1961 when Harper Lee received the Pulitzer Prize for 'To Kill a Mockingbird'",
+    "Daisy Bates served as the primary civil rights leader mentoring the Little Rock Nine during their 1957 integration of Central High School, acting as president of the Arkansas NAACP chapter and providing strategic guidance throughout the crisis"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "Daisy Bates",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "The answers agree because the solver's chain of verified facts (Pulitzer year 1961 → Kennedy presidency → Eisenhower preceding term → Little Rock Nine in 1957 → Daisy Bates as NAACP president and mentor) confirms Daisy Bates as the correct answer."
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-06T19:43:55.189756"
+}

@@ -1,0 +1,25 @@
+{
+  "source_file": "pipeline_result_20260103_043740.json",
+  "expansion_level": 0,
+  "question": "In which city is the Eiffel Tower located?",
+  "expected_answer": "Paris",
+  "solver_answer": "Paris",
+  "subject": "web_search",
+  "constant_ev": [],
+  "derived_ev": [
+    "The Eiffel Tower is located in Paris"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "Paris",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "The solver's answer (\"Paris\") matches the expected answer exactly and the solver provided correct supporting details about the Eiffel Tower's location (Champ de Mars, 7th arrondissement). Therefore there is no ambiguity or disagreement."
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-06T21:21:05.621680"
+}

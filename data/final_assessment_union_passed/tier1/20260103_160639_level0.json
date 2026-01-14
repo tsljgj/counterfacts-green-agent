@@ -1,0 +1,30 @@
+{
+  "source_file": "pipeline_result_20260103_160639.json",
+  "expansion_level": 0,
+  "question": "What was the first major armed conflict of the Cold War era that began in the year China's national film academy, established under the Ministry of Culture and instrumental in training directors of a transformative cinematic movement, was founded?",
+  "expected_answer": "Korean War",
+  "solver_answer": "Korean War",
+  "subject": "web_search",
+  "constant_ev": [
+    "Assume the film academy is established under the Ministry of Culture and instrumental in training directors of a transformative cinematic movement when identifying the academy's founding year"
+  ],
+  "derived_ev": [
+    "The Beijing Film Academy was founded in May/June 1950",
+    "The Korean War began on June 25, 1950 and is recognized as the first major armed conflict of the Cold War era",
+    "The Berlin Blockade (1948-1949) was an earlier Cold War confrontation but not an armed conflict",
+    "The first major armed conflict of the Cold War era that began in the same year as the founding of China's national film academy is the Korean War"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "Korean War",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "They agree because the solver's answer matches the expected \"Korean War.\" Multiple reliable sources confirm the key facts cited (Beijing Film Academy founding in May 1950, its role in training Fifth Generation directors, the Korean War's June 25, 1950 start, and its status as the first major Cold War conflict)."
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-06T23:08:40.837748"
+}

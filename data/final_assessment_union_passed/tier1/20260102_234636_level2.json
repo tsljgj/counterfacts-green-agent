@@ -1,0 +1,32 @@
+{
+  "source_file": "pipeline_result_20260102_234636.json",
+  "expansion_level": 2,
+  "question": "Determine Australia’s constitutionally designated federal capital city and its formal establishment year via official governmental documentation, then identify the sole U.S. federal statute enacted during that year establishing permanent national monetary oversight; using presidential archives, determine the political office held immediately prior to the presidency by the individual who signed this statute into law, confirming it is uniquely attributable to this executive among all national leaders serving during the statute’s legislative period.",
+  "expected_answer": "Governor of New Jersey",
+  "solver_answer": "Governor of New Jersey",
+  "subject": "web_search",
+  "constant_ev": [],
+  "derived_ev": [
+    "Canberra is explicitly identified as the federal capital of the Commonwealth of Australia in Britannica's official entry",
+    "The capital of Australia is Canberra",
+    "Canberra was formally established as Australia's capital city on March 12, 1913, according to Australia's official government portal",
+    "The Federal Reserve Act was enacted in the United States on December 23, 1913, as documented in History.com's archival records",
+    "The significant global historical milestone contemporaneous with Canberra's establishment as Australia's capital in 1913 was the enactment of the Federal Reserve Act",
+    "From the National Archives' Woodrow Wilson Presidential Library documentation, President Woodrow Wilson signed the Federal Reserve Act into law on December 23, 1913",
+    "The Miller Center's presidential archive confirms Woodrow Wilson served as the 34th Governor of New Jersey from January 17, 1911, to March 1, 1913",
+    "Woodrow Wilson's political position immediately preceding his presidency was Governor of New Jersey"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "Governor of New Jersey",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "The solver's answer matches the expected answer because the chain of verified facts—confirming Canberra's 1913 naming, the 1913 Federal Reserve Act, and Woodrow Wilson's service as Governor of New Jersey immediately before his presidency—supports that the correct answer is \"Governor of New Jersey."
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-06T19:35:43.808933"
+}

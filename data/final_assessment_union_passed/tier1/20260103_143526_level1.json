@@ -1,0 +1,34 @@
+{
+  "source_file": "pipeline_result_20260103_143526.json",
+  "expansion_level": 1,
+  "question": "Determine the individual recognized as the first president of the United States under the office established by the U.S. Constitution ratified in 1788, then identify the foundational document proposed by the First United States Congress during that individual's presidency, ensuring the solution corresponds to the constitutional protections formally initiated in the Congress's inaugural session under the new federal government.",
+  "expected_answer": "Bill of Rights",
+  "solver_answer": "Bill of Rights",
+  "subject": "web_search",
+  "constant_ev": [
+    "Define the first president of the United States based on the office established by the U.S. Constitution ratified in 1788 when determining the answer"
+  ],
+  "derived_ev": [
+    "The Library of Congress Research Guides explicitly identify George Washington as the first president of the United States",
+    "Wikipedia's entry on the List of Presidents of the United States states that George Washington was the first president under the current U.S. Constitution ratified in 1788",
+    "John Hanson served as President of the Continental Congress under the Articles of Confederation, but the modern presidency established by the U.S. Constitution in 1789 recognizes George Washington as the first president",
+    "The first president of the United States under the U.S. Constitution ratified in 1788 is George Washington",
+    "The First United States Congress convened at Federal Hall during George Washington's presidency",
+    "The First United States Congress formally proposed the Bill of Rights in 1789",
+    "The Bill of Rights established critical constitutional protections and was directly connected to George Washington's administration",
+    "The foundational document proposed by the First United States Congress in 1789 during George Washington's presidency was the Bill of Rights"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "Bill of Rights",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "The solver's answer \"Bill of Rights\" exactly matches the expected answer and is factually correct. George Washington was president when the First Congress proposed the Bill of Rights in 1789, so there is direct agreement."
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-06T22:52:58.623533"
+}

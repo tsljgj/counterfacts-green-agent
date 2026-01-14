@@ -1,0 +1,27 @@
+{
+  "source_file": "pipeline_result_20260103_152446.json",
+  "expansion_level": 0,
+  "question": "Where did the director of film The Sino-Dutch War 1661 study?",
+  "expected_answer": "Beijing Film Academy",
+  "solver_answer": "Beijing Film Academy",
+  "subject": "web_search",
+  "constant_ev": [],
+  "derived_ev": [
+    "The director of 'The Sino-Dutch War 1661' (also known as 'Hero Zheng Chenggong') is Wu Ziniu, confirmed by authoritative sources including Wikipedia, IMDb, and Letterboxd",
+    "Wu Ziniu is documented as a member of the 1982 graduating class of the Beijing Film Academy according to Wikipedia and CILECT's official documentation",
+    "The director of The Sino-Dutch War 1661, Wu Ziniu, studied at Beijing Film Academy as verified by institutional records and film industry publications"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "Beijing Film Academy",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "The solver's answer matches the expected answer exactly: research confirms director Wu Ziniu graduated from the Beijing Film Academy in 1982 (a member of the 1982 graduating class), so the answer is correct."
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-06T22:58:18.856755"
+}

@@ -1,0 +1,28 @@
+{
+  "source_file": "pipeline_result_20260103_091547.json",
+  "expansion_level": 0,
+  "question": "How many moles are in 44 grams of CO2? (Molar mass of CO2 = 44 g/mol)",
+  "expected_answer": "1 mole",
+  "solver_answer": "1.0 moles",
+  "subject": "chemistry",
+  "constant_ev": [
+    "Use molar mass of CO₂ = 44 g/mol in the mole calculation"
+  ],
+  "derived_ev": [
+    "The molar mass of CO₂ is verified as 44 g/mol using authoritative chemical databases",
+    "The number of moles in 44 grams of CO₂ is 1 mole"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "1.0 moles",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "The solver's answer (1.0 moles) is mathematically equivalent to the expected answer (1 mole). The calculation 44 g ÷ 44 g/mol = 1.0 mol is correct and the only difference is decimal precision."
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-06T22:29:58.600686"
+}

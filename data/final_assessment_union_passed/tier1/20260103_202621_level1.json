@@ -1,0 +1,28 @@
+{
+  "source_file": "pipeline_result_20260103_202621.json",
+  "expansion_level": 1,
+  "question": "Determine the founding date of the International Hydrographic Organization; using the determined date, identify the major international conference convened months thereafter whose defining outcome was a landmark naval agreement among principal maritime powers, and specify that outcome.",
+  "expected_answer": "Five-Power Treaty",
+  "solver_answer": "The International Hydrographic Organization was founded on June 21, 1921. Months thereafter, the Washington Naval Conference (November 12, 1921 – February 6, 1922) produced the Washington Naval Treaty (Five-Power Treaty) on February 6, 1922, establishing landmark limits on naval armaments among principal maritime powers.",
+  "subject": "web_search",
+  "constant_ev": [],
+  "derived_ev": [
+    "The International Hydrographic Bureau was formally founded on June 21, 1921, as stated in the IHO's official publication 'The History of the IHO' (M-10_2019_EN.pdf)",
+    "The Washington Naval Conference, convened months after the International Hydrographic Organization's June 21, 1921 founding, resulted in the Five-Power Treaty",
+    "The Five-Power Treaty was formally signed on February 6, 1922 by the United States, United Kingdom, Japan, France, and Italy",
+    "The primary outcome of the Washington Naval Conference was the Five-Power Treaty"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "The International Hydrographic Organization was founded on June 21, 1921. Months thereafter, the Washington Naval Conference (November 12, 1921 – February 6, 1922) produced the Washington Naval Treaty (Five-Power Treaty) on February 6, 1922, establishing landmark limits on naval armaments among principal maritime powers.",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "Both answers specify the Five-Power Treaty (Washington Naval Treaty) as the landmark outcome of the Washington Naval Conference, and the solver correctly places that conference months after the IHO founding on June 21, 1921. Multiple authoritative sources corroborate the dates and facts, so the solver's answer and the expected answer are equivalent."
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-07T00:46:17.758030"
+}

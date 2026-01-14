@@ -1,0 +1,32 @@
+{
+  "source_file": "pipeline_result_20260104_220616.json",
+  "expansion_level": 2,
+  "question": "Compute the peak wavelength in micrometers of blackbody radiation emitted by the cold reservoir when a heat engine performs 210.59 J of work per cycle while exhausting 513.55 J of heat under $Q_h = W + Q_c$, with a Carnot engine operating between this cold reservoir and a hot reservoir at 596.8°C exhibiting identical efficiency, using $\\sigma = 5.670374419 \\times 10^{-8}  \\text{W/m}^2\\text{K}^4$ and Wien's displacement constant $b = 2898  \\mu\\text{m}\\cdot\\text{K}$, where the radiation power per square meter corresponds to the quantity established by the efficiency equivalence condition.",
+  "expected_answer": "4.691 μm",
+  "solver_answer": "4.70 μm",
+  "subject": "physics",
+  "constant_ev": [
+    "Assume Q_h = W + Q_c when calculating the heat absorbed from the hot reservoir",
+    "Use σ = 5.670374419 × 10⁻⁸ W/m²K⁴ in the blackbody radiation power calculation",
+    "Use b = 2898 μm·K in Wien's displacement law calculation"
+  ],
+  "derived_ev": [
+    "The cold reservoir temperature for the Carnot engine is 344.5 degrees Celsius",
+    "The cold reservoir temperature in Kelvin is 617.65 K",
+    "The radiation power emitted by the cold reservoir as a blackbody radiator is 8252.42 W/m²",
+    "The peak wavelength of blackbody radiation emitted by the cold reservoir is 4.691 μm"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "4.70 μm",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "The solver's 4.70 μm agrees with the expected 4.691 μm within reasonable rounding tolerance (difference 0.009 μm), and the calculation used the correct physics (Carnot efficiency and Wien's displacement law)."
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-07T02:38:23.451348"
+}

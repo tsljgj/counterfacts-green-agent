@@ -1,0 +1,28 @@
+{
+  "source_file": "pipeline_result_20260103_052141.json",
+  "expansion_level": 0,
+  "question": "Who was the first woman to win a Nobel Prize?",
+  "expected_answer": "Marie Curie",
+  "solver_answer": "Marie Curie",
+  "subject": "web_search",
+  "constant_ev": [],
+  "derived_ev": [
+    "Marie Skłodowska-Curie was the first woman to receive a Nobel Prize in 1903 according to NobelPrize.org and Wikipedia documentation",
+    "The 1903 Nobel Prize in Physics was awarded jointly to Henri Becquerel, Pierre Curie, and Marie Curie, confirming she was the first female recipient as no woman received the prize in 1901 or 1902",
+    "Marie Curie's 1903 Nobel Prize preceded all other female laureates including Bertha von Suttner (Nobel Peace Prize, 1905) and Selma Lagerlöf (Nobel Prize in Literature, 1909)",
+    "The first woman to win a Nobel Prize was Marie Curie"
+  ],
+  "assessment": {
+    "final_status": "PASSED_TIER1",
+    "tier1_result": {
+      "solver_answer": "Marie Curie",
+      "answer_agrees": true,
+      "is_ambiguous": false,
+      "has_strong_evidence": false,
+      "reasoning": "The solver's answer exactly matches the expected answer. Multiple authoritative sources confirm Marie Curie was the first woman to win a Nobel Prize (the 1903 Nobel Prize in Physics), so the answers agree."
+    },
+    "tier2_result": null,
+    "adjunct_result": null
+  },
+  "timestamp": "2026-01-06T21:46:10.309309"
+}

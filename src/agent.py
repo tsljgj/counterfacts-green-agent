@@ -7,7 +7,7 @@ from a2a.types import Message, TaskState, Part, TextPart, DataPart
 from a2a.utils import get_message_text, new_agent_text_message
 
 from messenger import Messenger
-from dataset import QADataset, Question, DIFFICULTY_ORDER
+from dataset import QADataset, Question, DIFFICULTY_ORDER, SUBJECT_CATEGORIES
 from evaluator import LLMEvaluator, EvaluationResult
 
 
@@ -21,6 +21,7 @@ class QuestionResult(BaseModel):
     """Result for a single question."""
     qid: str
     difficulty: str
+    category: str  # "web" or "science"
     question: str
     reference_answer: str
     agent_answer: str
@@ -54,7 +55,21 @@ class AggregateResults(BaseModel):
     medium_accuracy: float
     hard_accuracy: float
     expert_accuracy: float
+    # Subject category accuracies for leaderboard
+    web_accuracy: float
+    science_accuracy: float
+    # Cross-tabulation: category x difficulty (e.g., web_easy_accuracy)
+    web_easy_accuracy: float
+    web_medium_accuracy: float
+    web_hard_accuracy: float
+    web_expert_accuracy: float
+    science_easy_accuracy: float
+    science_medium_accuracy: float
+    science_hard_accuracy: float
+    science_expert_accuracy: float
     by_difficulty: dict[str, dict[str, Any]]
+    by_category: dict[str, dict[str, Any]]  # web/science breakdown
+    by_category_difficulty: dict[str, dict[str, dict[str, Any]]]  # category -> difficulty -> stats
 
 
 class AssessmentResult(BaseModel):
@@ -252,6 +267,7 @@ class Agent:
             results.append(QuestionResult(
                 qid=question.qid,
                 difficulty=question.difficulty,
+                category=question.category,
                 question=question.question,
                 reference_answer=question.reference_answer,
                 agent_answer=agent_answer,
@@ -303,6 +319,48 @@ class Agent:
         hard_accuracy = by_difficulty["hard"]["pass_rate"]
         expert_accuracy = by_difficulty["expert"]["pass_rate"]
 
+        # Calculate by-category breakdown (web vs science)
+        by_category: dict[str, dict[str, Any]] = {}
+        for category in SUBJECT_CATEGORIES:
+            cat_results = [r for r in results if r.category == category]
+            cat_correct = sum(1 for r in cat_results if r.correct)
+            cat_total = len(cat_results)
+            by_category[category] = {
+                "correct": cat_correct,
+                "total": cat_total,
+                "pass_rate": cat_correct / cat_total if cat_total > 0 else 0.0,
+                "avg_score": sum(r.score for r in cat_results) / cat_total if cat_total > 0 else 0.0
+            }
+
+        # Extract category accuracies for leaderboard
+        web_accuracy = by_category["web"]["pass_rate"]
+        science_accuracy = by_category["science"]["pass_rate"]
+
+        # Calculate cross-tabulation: category x difficulty
+        by_category_difficulty: dict[str, dict[str, dict[str, Any]]] = {}
+        for category in SUBJECT_CATEGORIES:
+            by_category_difficulty[category] = {}
+            for difficulty in DIFFICULTY_ORDER:
+                cat_diff_results = [r for r in results if r.category == category and r.difficulty == difficulty]
+                cat_diff_correct = sum(1 for r in cat_diff_results if r.correct)
+                cat_diff_total = len(cat_diff_results)
+                by_category_difficulty[category][difficulty] = {
+                    "correct": cat_diff_correct,
+                    "total": cat_diff_total,
+                    "pass_rate": cat_diff_correct / cat_diff_total if cat_diff_total > 0 else 0.0,
+                    "avg_score": sum(r.score for r in cat_diff_results) / cat_diff_total if cat_diff_total > 0 else 0.0
+                }
+
+        # Extract cross-tabulation accuracies for leaderboard
+        web_easy_accuracy = by_category_difficulty["web"]["easy"]["pass_rate"]
+        web_medium_accuracy = by_category_difficulty["web"]["medium"]["pass_rate"]
+        web_hard_accuracy = by_category_difficulty["web"]["hard"]["pass_rate"]
+        web_expert_accuracy = by_category_difficulty["web"]["expert"]["pass_rate"]
+        science_easy_accuracy = by_category_difficulty["science"]["easy"]["pass_rate"]
+        science_medium_accuracy = by_category_difficulty["science"]["medium"]["pass_rate"]
+        science_hard_accuracy = by_category_difficulty["science"]["hard"]["pass_rate"]
+        science_expert_accuracy = by_category_difficulty["science"]["expert"]["pass_rate"]
+
         aggregate = AggregateResults(
             total_tasks=len(results),
             correct=correct_count,
@@ -315,7 +373,19 @@ class Agent:
             medium_accuracy=medium_accuracy,
             hard_accuracy=hard_accuracy,
             expert_accuracy=expert_accuracy,
-            by_difficulty=by_difficulty
+            web_accuracy=web_accuracy,
+            science_accuracy=science_accuracy,
+            web_easy_accuracy=web_easy_accuracy,
+            web_medium_accuracy=web_medium_accuracy,
+            web_hard_accuracy=web_hard_accuracy,
+            web_expert_accuracy=web_expert_accuracy,
+            science_easy_accuracy=science_easy_accuracy,
+            science_medium_accuracy=science_medium_accuracy,
+            science_hard_accuracy=science_hard_accuracy,
+            science_expert_accuracy=science_expert_accuracy,
+            by_difficulty=by_difficulty,
+            by_category=by_category,
+            by_category_difficulty=by_category_difficulty
         )
 
         # Create final assessment result
@@ -343,26 +413,67 @@ class Agent:
         # Generate fancy ASCII graph
         accuracy_graph = generate_accuracy_graph(by_difficulty)
 
+        # Build category stats strings
+        web_stats = by_category["web"]
+        science_stats = by_category["science"]
+
+        # Helper to format stats
+        def fmt_stats(s: dict) -> str:
+            return f"{s['correct']}/{s['total']}" if s['total'] > 0 else "--/--"
+
         # Build formatted results text
         results_text = (
-            "=" * 60 + "\n"
-            "              AQA BENCHMARK RESULTS\n"
-            "=" * 60 + "\n\n"
+            "=" * 70 + "\n"
+            "                    AQA BENCHMARK RESULTS\n"
+            "=" * 70 + "\n\n"
             f"  Overall Performance\n"
             f"  -------------------\n"
             f"  Pass Rate:       {pass_rate:6.1%} ({correct_count}/{len(results)})\n"
-            f"  Weighted Score:  {weighted_score:6.3f}  (difficulty-adjusted)\n"
+            f"  Weighted Score:  {weighted_score:6.3f}  (difficulty-adjusted, for ranking)\n"
             f"  Average Score:   {avg_score:6.3f}\n"
             f"  Total Time:      {total_time_ms:,}ms\n"
             f"  Average Latency: {avg_latency_ms:,}ms\n"
             f"{accuracy_graph}\n"
-            f"  Level Accuracies (for Leaderboard)\n"
-            f"  ----------------------------------\n"
-            f"  Easy:   {easy_accuracy:6.1%}  (weight: {DIFFICULTY_WEIGHTS['easy']:.0f}x)\n"
-            f"  Medium: {medium_accuracy:6.1%}  (weight: {DIFFICULTY_WEIGHTS['medium']:.0f}x)\n"
-            f"  Hard:   {hard_accuracy:6.1%}  (weight: {DIFFICULTY_WEIGHTS['hard']:.0f}x)\n"
-            f"  Expert: {expert_accuracy:6.1%}  (weight: {DIFFICULTY_WEIGHTS['expert']:.0f}x)\n\n"
-            "=" * 60
+            f"  Accuracy by Difficulty Level\n"
+            f"  ----------------------------\n"
+            f"  Easy:   {easy_accuracy:6.1%}  ({fmt_stats(by_difficulty['easy'])})  weight: {DIFFICULTY_WEIGHTS['easy']:.0f}x\n"
+            f"  Medium: {medium_accuracy:6.1%}  ({fmt_stats(by_difficulty['medium'])})  weight: {DIFFICULTY_WEIGHTS['medium']:.0f}x\n"
+            f"  Hard:   {hard_accuracy:6.1%}  ({fmt_stats(by_difficulty['hard'])})  weight: {DIFFICULTY_WEIGHTS['hard']:.0f}x\n"
+            f"  Expert: {expert_accuracy:6.1%}  ({fmt_stats(by_difficulty['expert'])})  weight: {DIFFICULTY_WEIGHTS['expert']:.0f}x\n\n"
+            f"  Accuracy by Subject Category\n"
+            f"  ----------------------------\n"
+            f"  Web:     {web_accuracy:6.1%}  ({fmt_stats(web_stats)})\n"
+            f"  Science: {science_accuracy:6.1%}  ({fmt_stats(science_stats)})\n\n"
+            f"  Accuracy by Category + Difficulty (Cross-tabulation)\n"
+            f"  ----------------------------------------------------\n"
+            f"  Web:\n"
+            f"    Easy:   {web_easy_accuracy:6.1%}  ({fmt_stats(by_category_difficulty['web']['easy'])})\n"
+            f"    Medium: {web_medium_accuracy:6.1%}  ({fmt_stats(by_category_difficulty['web']['medium'])})\n"
+            f"    Hard:   {web_hard_accuracy:6.1%}  ({fmt_stats(by_category_difficulty['web']['hard'])})\n"
+            f"    Expert: {web_expert_accuracy:6.1%}  ({fmt_stats(by_category_difficulty['web']['expert'])})\n"
+            f"  Science:\n"
+            f"    Easy:   {science_easy_accuracy:6.1%}  ({fmt_stats(by_category_difficulty['science']['easy'])})\n"
+            f"    Medium: {science_medium_accuracy:6.1%}  ({fmt_stats(by_category_difficulty['science']['medium'])})\n"
+            f"    Hard:   {science_hard_accuracy:6.1%}  ({fmt_stats(by_category_difficulty['science']['hard'])})\n"
+            f"    Expert: {science_expert_accuracy:6.1%}  ({fmt_stats(by_category_difficulty['science']['expert'])})\n\n"
+            f"  Leaderboard Metrics (for ranking)\n"
+            f"  ---------------------------------\n"
+            f"  weighted_score:        {weighted_score:.3f}  <- DEFAULT RANKING\n"
+            f"  easy_accuracy:         {easy_accuracy:.3f}\n"
+            f"  medium_accuracy:       {medium_accuracy:.3f}\n"
+            f"  hard_accuracy:         {hard_accuracy:.3f}\n"
+            f"  expert_accuracy:       {expert_accuracy:.3f}\n"
+            f"  web_accuracy:          {web_accuracy:.3f}\n"
+            f"  science_accuracy:      {science_accuracy:.3f}\n"
+            f"  web_easy_accuracy:     {web_easy_accuracy:.3f}\n"
+            f"  web_medium_accuracy:   {web_medium_accuracy:.3f}\n"
+            f"  web_hard_accuracy:     {web_hard_accuracy:.3f}\n"
+            f"  web_expert_accuracy:   {web_expert_accuracy:.3f}\n"
+            f"  science_easy_accuracy: {science_easy_accuracy:.3f}\n"
+            f"  science_medium_accuracy:{science_medium_accuracy:.3f}\n"
+            f"  science_hard_accuracy: {science_hard_accuracy:.3f}\n"
+            f"  science_expert_accuracy:{science_expert_accuracy:.3f}\n\n"
+            "=" * 70
         )
 
         await updater.add_artifact(

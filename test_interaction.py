@@ -165,17 +165,27 @@ async def run_assessment(
 
                                 # Print weighted score and level accuracies
                                 weighted_score = agg.get('weighted_score', 0.0)
-                                print(f"\n  Weighted Score: {weighted_score:.3f}")
+                                print(f"\n  Weighted Score: {weighted_score:.3f}  <- DEFAULT RANKING")
                                 print(f"  (Weights: Easy=1x, Medium=2x, Hard=3x, Expert=4x)")
 
                                 # Print individual level accuracies for leaderboard
                                 print("\n  Leaderboard Metrics:")
                                 print("  " + "-" * 50)
-                                print(f"  easy_accuracy:   {agg.get('easy_accuracy', 0.0):6.1%}")
-                                print(f"  medium_accuracy: {agg.get('medium_accuracy', 0.0):6.1%}")
-                                print(f"  hard_accuracy:   {agg.get('hard_accuracy', 0.0):6.1%}")
-                                print(f"  expert_accuracy: {agg.get('expert_accuracy', 0.0):6.1%}")
-                                print(f"  weighted_score:  {weighted_score:.3f}")
+                                print(f"  weighted_score:         {weighted_score:.3f}  <- DEFAULT")
+                                print(f"  easy_accuracy:          {agg.get('easy_accuracy', 0.0):.3f}")
+                                print(f"  medium_accuracy:        {agg.get('medium_accuracy', 0.0):.3f}")
+                                print(f"  hard_accuracy:          {agg.get('hard_accuracy', 0.0):.3f}")
+                                print(f"  expert_accuracy:        {agg.get('expert_accuracy', 0.0):.3f}")
+                                print(f"  web_accuracy:           {agg.get('web_accuracy', 0.0):.3f}")
+                                print(f"  science_accuracy:       {agg.get('science_accuracy', 0.0):.3f}")
+                                print(f"  web_easy_accuracy:      {agg.get('web_easy_accuracy', 0.0):.3f}")
+                                print(f"  web_medium_accuracy:    {agg.get('web_medium_accuracy', 0.0):.3f}")
+                                print(f"  web_hard_accuracy:      {agg.get('web_hard_accuracy', 0.0):.3f}")
+                                print(f"  web_expert_accuracy:    {agg.get('web_expert_accuracy', 0.0):.3f}")
+                                print(f"  science_easy_accuracy:  {agg.get('science_easy_accuracy', 0.0):.3f}")
+                                print(f"  science_medium_accuracy:{agg.get('science_medium_accuracy', 0.0):.3f}")
+                                print(f"  science_hard_accuracy:  {agg.get('science_hard_accuracy', 0.0):.3f}")
+                                print(f"  science_expert_accuracy:{agg.get('science_expert_accuracy', 0.0):.3f}")
 
                                 # Print detailed by-difficulty breakdown
                                 if by_diff:
@@ -194,14 +204,43 @@ async def run_assessment(
                                             print(f"  {diff.capitalize():8s}: --/--  (no questions)")
                                     print()
 
+                                # Print by-category breakdown with difficulty sub-breakdown
+                                by_cat = agg.get('by_category', {})
+                                by_cat_diff = agg.get('by_category_difficulty', {})
+                                if by_cat:
+                                    print("\n  Breakdown by Subject Category:")
+                                    print("  " + "-" * 50)
+                                    for cat in ["web", "science"]:
+                                        if cat not in by_cat:
+                                            continue
+                                        stats = by_cat[cat]
+                                        total = stats.get('total', 0)
+                                        correct = stats.get('correct', 0)
+                                        if total > 0:
+                                            print(f"  {cat.capitalize():8s}: {correct:2d}/{total:<2d} "
+                                                  f"({stats['pass_rate']:6.1%}) | avg_score: {stats['avg_score']:.3f}")
+                                            # Show difficulty breakdown within category
+                                            if cat in by_cat_diff:
+                                                for diff in DIFFICULTY_ORDER:
+                                                    if diff in by_cat_diff[cat]:
+                                                        d_stats = by_cat_diff[cat][diff]
+                                                        d_total = d_stats.get('total', 0)
+                                                        d_correct = d_stats.get('correct', 0)
+                                                        if d_total > 0:
+                                                            print(f"    - {diff.capitalize():8s}: {d_correct:2d}/{d_total:<2d} ({d_stats['pass_rate']:6.1%})")
+                                        else:
+                                            print(f"  {cat.capitalize():8s}: --/--  (no questions)")
+                                    print()
+
                                 if items:
                                     print("\n  Individual Question Results:")
                                     print("  " + "-" * 50)
                                     for i, item in enumerate(items, 1):
                                         status = "PASS" if item['correct'] else "FAIL"
                                         status_icon = "✓" if item['correct'] else "✗"
+                                        category = item.get('category', 'unknown').capitalize()
                                         print(f"\n  [{status_icon}] Q{i}: {item['question'][:70]}...")
-                                        print(f"      Difficulty: {item['difficulty'].capitalize()}")
+                                        print(f"      Difficulty: {item['difficulty'].capitalize()} | Category: {category}")
                                         print(f"      Expected:   {item['reference_answer'][:80]}")
                                         print(f"      Got:        {item['agent_answer'][:80]}")
                                         print(f"      Score: {item['score']:.2f} | Latency: {item['latency_ms']}ms | {status}")

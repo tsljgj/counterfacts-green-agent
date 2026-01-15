@@ -17,6 +17,26 @@ LEVEL_TO_DIFFICULTY = {
 # Ordered difficulty levels (for display purposes)
 DIFFICULTY_ORDER = ["easy", "medium", "hard", "expert"]
 
+# Subject categories for leaderboard
+SUBJECT_CATEGORIES = ["web", "science"]
+
+# Subjects that are classified as "web" (all others are "science")
+WEB_SUBJECTS = {"web_search", "web"}
+
+
+def classify_subject(subject: str | None) -> str:
+    """Classify a subject into web or science category.
+
+    Args:
+        subject: The raw subject string from the dataset
+
+    Returns:
+        "web" if subject is web-related, "science" otherwise
+    """
+    if subject is None:
+        return "science"
+    return "web" if subject.lower() in WEB_SUBJECTS else "science"
+
 
 class Question(BaseModel):
     """A single QA question."""
@@ -24,7 +44,8 @@ class Question(BaseModel):
     difficulty: str
     question: str
     reference_answer: str
-    domain: Optional[str] = None
+    domain: Optional[str] = None  # Original subject (e.g., "web_search", "physics")
+    category: str = "science"  # Classified category: "web" or "science"
     metadata: Optional[dict] = None
 
 
@@ -76,13 +97,16 @@ class QADataset:
         # Map fields from new format to expected format
         expansion_level = data.get("expansion_level", 0)
         difficulty = LEVEL_TO_DIFFICULTY.get(expansion_level, "medium")
+        subject = data.get("subject")
+        category = classify_subject(subject)
 
         question = Question(
             qid=json_file.stem,
             difficulty=difficulty,
             question=data["question"],
             reference_answer=data["expected_answer"],
-            domain=data.get("subject"),
+            domain=subject,
+            category=category,
             metadata={
                 "tier": tier,
                 "expansion_level": expansion_level,

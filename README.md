@@ -5,11 +5,11 @@
   <img src="https://img.shields.io/badge/Docker-Ready-2496ED.svg" alt="Docker Ready">
 </p>
 
-# AQA Green Agent
+# CounterFacts Green Agent
 
 > **A benchmark evaluator for testing AI agents on multi-step reasoning questions**
 
-The AQA (Agent Question Answering) Green Agent is a benchmark evaluation service that tests AI agents on their ability to answer challenging, multi-step reasoning questions. It implements the [A2A (Agent-to-Agent) Protocol](https://a2a-protocol.org/) for interoperability with any compliant agent.
+The CounterFacts Green Agent is a benchmark evaluation service that tests AI agents on their ability to answer challenging, multi-step reasoning questions. It implements the [A2A (Agent-to-Agent) Protocol](https://a2a-protocol.org/) for interoperability with any compliant agent.
 
 ## About
 

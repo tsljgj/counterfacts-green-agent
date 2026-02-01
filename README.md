@@ -30,12 +30,12 @@ This green agent uses the **AQA Benchmark Dataset** - a collection of curated, d
 
 ```
 ┌─────────────────────────────────────────────────────────────────────┐
-│                    AgentBeats Platform / Client                      │
+│                    AgentBeats Platform / Client                     │
 └──────────────────────────────┬──────────────────────────────────────┘
                                │ Assessment Request (A2A)
                                ▼
 ┌─────────────────────────────────────────────────────────────────────┐
-│                 COUNTERFACTS GREEN AGENT (This Repo)                   │
+│                COUNTERFACTS GREEN AGENT (This Repo)                 │
 │  ┌───────────────────────────────────────────────────────────────┐  │
 │  │  1. Parse request (num_tasks, difficulties, seed)             │  │
 │  │  2. Sample questions from AQA dataset                         │  │
@@ -48,8 +48,8 @@ This green agent uses the **AQA Benchmark Dataset** - a collection of curated, d
                                │ Questions (A2A)
                                ▼
 ┌─────────────────────────────────────────────────────────────────────┐
-│                    PURPLE AGENT (Being Tested)                       │
-│                    Any A2A-compliant QA agent                        │
+│                    PURPLE AGENT (Being Tested)                      │
+│                    Any A2A-compliant QA agent                       │
 └─────────────────────────────────────────────────────────────────────┘
 ```
 

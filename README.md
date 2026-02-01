@@ -79,8 +79,8 @@ The agent will be available at `http://localhost:9009`.
 
 ```bash
 # Clone the repository
-git clone https://github.com/tsljgj/AQA-green-agent.git
-cd AQA-green-agent
+git clone https://github.com/tsljgj/counterfacts-green-agent.git
+cd counterfacts-green-agent
 
 # Install dependencies
 uv sync
@@ -288,7 +288,7 @@ Answers are evaluated using GPT-4o-mini with semantic equivalence checking:
 ## Project Structure
 
 ```
-AQA-green-agent/
+counterfacts-green-agent/
 ├── src/
 │   ├── server.py          # A2A server & agent card
 │   ├── agent.py           # Core benchmark evaluator
@@ -337,8 +337,8 @@ The repository includes a GitHub Actions workflow that:
 
 Published images are available at:
 ```
-ghcr.io/tsljgj/aqa-green-agent:latest
-ghcr.io/tsljgj/aqa-green-agent:1.0.0
+ghcr.io/tsljgj/counterfacts-green-agent:latest
+ghcr.io/tsljgj/counterfacts-green-agent:1.0.0
 ```
 
 ---

@@ -35,7 +35,7 @@ This green agent uses the **AQA Benchmark Dataset** - a collection of curated, d
                                │ Assessment Request (A2A)
                                ▼
 ┌─────────────────────────────────────────────────────────────────────┐
-│                      AQA GREEN AGENT (This Repo)                     │
+│                      Counterfacts GREEN AGENT (This Repo)                     │
 │  ┌───────────────────────────────────────────────────────────────┐  │
 │  │  1. Parse request (num_tasks, difficulties, seed)             │  │
 │  │  2. Sample questions from AQA dataset                         │  │
